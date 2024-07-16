@@ -21,21 +21,34 @@ val pattern = Regex("^\\d+\$")
 fun SetupScreen(context: Context, onNavigateMainScreen: (Int) -> Unit) {
     val viewModel = viewModel<SetupScreenViewModel>(factory = SetupScreenViewModel.factory)
     val amountWords = viewModel.amountWords.collectAsState()
-    
-    Column(verticalArrangement = Arrangement.SpaceBetween, horizontalAlignment = Alignment.CenterHorizontally) {
+
+    Column(
+        verticalArrangement = Arrangement.SpaceBetween,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         Column {
 
         }
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(text = "How many words to train today?")
-            Slider(value = amountWords.value.toFloat(), onValueChange = { viewModel.setAmountWords(it.roundToInt()) }, valueRange = 1F..360F, steps = 359)
+            Slider(
+                value = amountWords.value.toFloat(),
+                onValueChange = { viewModel.setAmountWords(it.roundToInt()) },
+                valueRange = 1F..360F,
+                steps = 359
+            )
             Text(text = "Or by input:")
-            TextField(value = amountWords.value.toString(), onValueChange = { it: String ->
-                if (it.isNotEmpty() && it.matches(pattern)) {
-                    val tmp = it.toInt()
-                    if (tmp in 1..360) viewModel.setAmountWords(it.toInt())
-                }
-            }, singleLine = true, keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number))
+            TextField(
+                value = amountWords.value.toString(),
+                onValueChange = { it: String ->
+                    if (it.isNotEmpty() && it.matches(pattern)) {
+                        val tmp = it.toInt()
+                        if (tmp in 1..360) viewModel.setAmountWords(it.toInt())
+                    }
+                },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+            )
             Text(text = "Entered amount: ${amountWords.value}")
             Button(onClick = { onNavigateMainScreen(amountWords.value) }) {
                 Text(text = "Go")

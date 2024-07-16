@@ -10,7 +10,7 @@ interface AppModule {
     val wordInfoRepository: WordInfoRepository
 }
 
-class AppModuleImpl(val applicationContext: Context): AppModule {
+class AppModuleImpl(val applicationContext: Context) : AppModule {
     override val gson by lazy {
         Gson()
     }

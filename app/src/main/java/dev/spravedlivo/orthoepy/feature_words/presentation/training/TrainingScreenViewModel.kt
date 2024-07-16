@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 class TrainingScreenViewModel(
-   val wordInfoRepository: WordInfoRepository
+    val wordInfoRepository: WordInfoRepository
 ) : ViewModel() {
 
     private val _loadingWords = MutableStateFlow<Boolean>(false)
@@ -23,10 +23,10 @@ class TrainingScreenViewModel(
     private val _loadedWords = MutableStateFlow(false)
     val loadedWords = _loadedWords.asStateFlow()
 
-    private val _words = MutableStateFlow<List<WordInfoItem>>( listOf() )
+    private val _words = MutableStateFlow<List<WordInfoItem>>(listOf())
     val words = _words.asStateFlow()
 
-    private val _wordIndex = MutableStateFlow( 0 )
+    private val _wordIndex = MutableStateFlow(0)
     val wordIndex = _wordIndex.asStateFlow()
 
     private val _correctHits = MutableStateFlow(0)

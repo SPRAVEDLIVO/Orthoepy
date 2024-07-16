@@ -11,7 +11,6 @@ import androidx.navigation.toRoute
 import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.SetupScreen
 import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreen
 import dev.spravedlivo.orthoepy.feature_words.presentation.setup.SetupScreen
-import dev.spravedlivo.orthoepy.feature_words.presentation.training.TrainingScreen
 import kotlin.reflect.KClass
 
 fun NavHostController.navigateSingleTopTo(
@@ -36,14 +35,20 @@ fun AppNavHost(context: Context) {
     NavHost(navController = navController, startDestination = SetupScreen) {
         composable<SetupScreen> {
             SetupScreen(context, onNavigateMainScreen = { amountWords ->
-                navController.navigate(dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreen(amountWords))
+                navController.navigate(
+                    dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreen(
+                        amountWords
+                    )
+                )
             })
         }
         composable<TrainingScreen> {
             val args = it.toRoute<TrainingScreen>()
-            dev.spravedlivo.orthoepy.feature_words.presentation.training.TrainingScreen(amountWords = args.amountWords, onNavigateSetupScreen = {
-                navController.navigate(SetupScreen)
-            })
+            dev.spravedlivo.orthoepy.feature_words.presentation.training.TrainingScreen(
+                amountWords = args.amountWords,
+                onNavigateSetupScreen = {
+                    navController.navigate(SetupScreen)
+                })
         }
     }
 }

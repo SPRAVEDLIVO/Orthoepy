@@ -7,7 +7,7 @@ import dev.spravedlivo.orthoepy.feature_words.domain.model.WordInfoItem
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
 
 
-class WordInfoRepositoryImpl(val context: Context, val gson: Gson): WordInfoRepository {
+class WordInfoRepositoryImpl(val context: Context, val gson: Gson) : WordInfoRepository {
     private val _wordInfo: Array<WordInfoItem>? = null
     override fun getWordInfo(): Array<WordInfoItem> {
         if (_wordInfo != null) return _wordInfo
