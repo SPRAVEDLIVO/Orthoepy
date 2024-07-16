@@ -1,5 +1,7 @@
 package dev.spravedlivo.orthoepy.feature_words.presentation.training
 
+import android.media.AudioAttributes
+import android.media.MediaPlayer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.spravedlivo.orthoepy.App
@@ -30,6 +32,11 @@ class TrainingScreenViewModel(
     private val _correctHits = MutableStateFlow(0)
     val correctHits = _correctHits.asStateFlow()
 
+    private val _mediaPlayer = MutableStateFlow<MediaPlayer?>(null)
+    val mediaPlayer = _mediaPlayer.asStateFlow()
+
+    private val _playedSound = MutableStateFlow(false)
+
 
     fun incrementWordIndex(onDelay: () -> Unit) {
         viewModelScope.launch {
@@ -37,11 +44,48 @@ class TrainingScreenViewModel(
             delay(500)
             onDelay()
             _wordIndex.value += 1
+
+            _playedSound.value = false
         }
     }
 
     fun incrementCorrectHits() {
         _correctHits.value++
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        disposePlayer()
+    }
+
+    fun disposePlayer() {
+        if (_mediaPlayer.value != null) _mediaPlayer.value!!.release()
+        _mediaPlayer.value = null
+    }
+
+    fun loadAudio() {
+        if (_mediaPlayer.value != null) return
+        disposePlayer()
+        val currentWord = _words.value.getOrNull(wordIndex.value) ?: return
+        MediaPlayer().apply {
+            setAudioAttributes(
+                AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .build()
+            )
+            setOnPreparedListener {
+                _mediaPlayer.value = it
+            }
+            setDataSource(currentWord.audio_url)
+            prepareAsync() // might take long! (for buffering, etc)
+        }
+    }
+
+    fun play() {
+        if (_playedSound.value || mediaPlayer.value == null) return
+        _mediaPlayer.value!!.start()
+        _playedSound.value = true
     }
 
     fun loadWords(amount: Int) {

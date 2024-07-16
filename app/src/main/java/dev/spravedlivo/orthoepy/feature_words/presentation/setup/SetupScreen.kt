@@ -42,7 +42,7 @@ fun SetupScreen(context: Context, onNavigateMainScreen: (Int) -> Unit) {
             }
         }
         Column {
-            Text(text = "hi2")
+//            Text(text = "hi2")
         }
     }
 }

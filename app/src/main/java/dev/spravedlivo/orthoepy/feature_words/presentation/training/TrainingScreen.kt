@@ -1,19 +1,12 @@
 package dev.spravedlivo.orthoepy.feature_words.presentation.training
 
 import androidx.compose.animation.animateColorAsState
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -24,20 +17,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import kotlinx.coroutines.delay
-import java.util.ArrayList
 
 
 enum class ColorState() {
@@ -55,6 +41,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
     val words = viewModel.words.collectAsState()
     val wordIndex = viewModel.wordIndex.collectAsState()
     val correctHits = viewModel.correctHits.collectAsState()
+    val mediaPlayer = viewModel.mediaPlayer.collectAsState()
 
 
     Column(verticalArrangement = Arrangement.SpaceBetween, horizontalAlignment = Alignment.CenterHorizontally) {
@@ -72,9 +59,13 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
 
 
                 if (wordIndex.value < words.value.size) {
-                    val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
                     val wordInfo = words.value[wordIndex.value]
                     println(wordInfo.word)
+                    viewModel.loadAudio()
+
+                    val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
+
+
                     val colors = mutableListOf<MutableState<ColorState>>()
                     colors.apply {
 
@@ -122,6 +113,11 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                                                 }
 
                                                 viewModel.incrementWordIndex {
+                                                    viewModel.play()
+                                                    mediaPlayer.value!!.setOnCompletionListener {
+                                                        viewModel.disposePlayer()
+                                                        viewModel.loadAudio()
+                                                    }
                                                     colors.forEach { it.value = ColorState.DEFAULT }
                                                 }
                                             }
