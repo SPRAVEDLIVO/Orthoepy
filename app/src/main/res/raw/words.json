@@ -1,0 +1,3512 @@
+[
+  {
+    "id": 1,
+    "word": "Лилась",
+    "sensitive": "лилАсь",
+    "incorrect": "ли́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id1.mp3"
+  },
+  {
+    "id": 2,
+    "word": "Начать",
+    "sensitive": "начАть",
+    "incorrect": "на́чать",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id2.mp3"
+  },
+  {
+    "id": 3,
+    "word": "Нанявшийся",
+    "sensitive": "нанЯвшийся",
+    "incorrect": "на́нявшийся",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id3.mp3"
+  },
+  {
+    "id": 4,
+    "word": "Перезвонит",
+    "sensitive": "перезвонИт",
+    "incorrect": "перезво́нит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id4.mp3"
+  },
+  {
+    "id": 5,
+    "word": "Досуха",
+    "sensitive": "дОсуха",
+    "incorrect": "досу́ха",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id5.mp3"
+  },
+  {
+    "id": 6,
+    "word": "Корысть",
+    "sensitive": "корЫсть",
+    "incorrect": "ко́рысть",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id6.mp3"
+  },
+  {
+    "id": 7,
+    "word": "Тортов",
+    "sensitive": "тОртов",
+    "incorrect": "торто́в",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id7.mp3"
+  },
+  {
+    "id": 8,
+    "word": "Еретик",
+    "sensitive": "еретИк",
+    "incorrect": "ере́тик",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id8.mp3"
+  },
+  {
+    "id": 9,
+    "word": "Отбыла",
+    "sensitive": "отбылА",
+    "incorrect": "отбы́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id9.mp3"
+  },
+  {
+    "id": 10,
+    "word": "Полила",
+    "sensitive": "полилА",
+    "incorrect": "поли́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id10.mp3"
+  },
+  {
+    "id": 11,
+    "word": "Принудить",
+    "sensitive": "принУдить",
+    "incorrect": "принуди́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id11.mp3"
+  },
+  {
+    "id": 12,
+    "word": "Осведомиться",
+    "sensitive": "освЕдомиться",
+    "incorrect": "осведоми́ться",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id12.mp3"
+  },
+  {
+    "id": 13,
+    "word": "Тотчас",
+    "sensitive": "тОтчас",
+    "incorrect": "тотча́с",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id13.mp3"
+  },
+  {
+    "id": 14,
+    "word": "Ободренный",
+    "sensitive": "ободрЕнный",
+    "incorrect": "обо́дренный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id14.mp3"
+  },
+  {
+    "id": 15,
+    "word": "Свекла",
+    "sensitive": "свЕкла",
+    "incorrect": "свекла́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id15.mp3"
+  },
+  {
+    "id": 16,
+    "word": "Облегчить",
+    "sensitive": "облегчИть",
+    "incorrect": "обле́гчить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id16.mp3"
+  },
+  {
+    "id": 17,
+    "word": "Мусоропровод",
+    "sensitive": "мусоропровОд",
+    "incorrect": "мусоропро́вод",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id17.mp3"
+  },
+  {
+    "id": 18,
+    "word": "Снята",
+    "sensitive": "снятА",
+    "incorrect": "сня́та",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id18.mp3"
+  },
+  {
+    "id": 19,
+    "word": "Ободрен",
+    "sensitive": "ободрЕн",
+    "incorrect": "обо́дрен",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id19.mp3"
+  },
+  {
+    "id": 20,
+    "word": "Назвалась",
+    "sensitive": "назвалАсь",
+    "incorrect": "назва́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id20.mp3"
+  },
+  {
+    "id": 21,
+    "word": "Нарост",
+    "sensitive": "нарОст",
+    "incorrect": "на́рост",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id21.mp3"
+  },
+  {
+    "id": 22,
+    "word": "Проживший",
+    "sensitive": "прожИвший",
+    "incorrect": "про́живший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id22.mp3"
+  },
+  {
+    "id": 23,
+    "word": "Созыв",
+    "sensitive": "созЫв",
+    "incorrect": "со́зыв",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id23.mp3"
+  },
+  {
+    "id": 24,
+    "word": "Добрала",
+    "sensitive": "добралА",
+    "incorrect": "добра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id24.mp3"
+  },
+  {
+    "id": 25,
+    "word": "Понявший",
+    "sensitive": "понЯвший",
+    "incorrect": "по́нявший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id25.mp3"
+  },
+  {
+    "id": 26,
+    "word": "Оклеить",
+    "sensitive": "оклЕить",
+    "incorrect": "оклеи́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id26.mp3"
+  },
+  {
+    "id": 27,
+    "word": "Сняла",
+    "sensitive": "снялА",
+    "incorrect": "сня́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id27.mp3"
+  },
+  {
+    "id": 28,
+    "word": "Квартал",
+    "sensitive": "квартАл",
+    "incorrect": "ква́ртал",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id28.mp3"
+  },
+  {
+    "id": 29,
+    "word": "Начатые",
+    "sensitive": "нАчатые",
+    "incorrect": "нача́тые",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id29.mp3"
+  },
+  {
+    "id": 30,
+    "word": "Агент",
+    "sensitive": "агЕнт",
+    "incorrect": "а́гент",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id30.mp3"
+  },
+  {
+    "id": 31,
+    "word": "Укрепит",
+    "sensitive": "укрепИт",
+    "incorrect": "укре́пит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id31.mp3"
+  },
+  {
+    "id": 32,
+    "word": "Звала",
+    "sensitive": "звалА",
+    "incorrect": "зва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id32.mp3"
+  },
+  {
+    "id": 33,
+    "word": "Красивейший",
+    "sensitive": "красИвейший",
+    "incorrect": "красиве́йший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id33.mp3"
+  },
+  {
+    "id": 34,
+    "word": "Создана",
+    "sensitive": "созданА",
+    "incorrect": "со́здана",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id34.mp3"
+  },
+  {
+    "id": 35,
+    "word": "Избалованный",
+    "sensitive": "избалОванный",
+    "incorrect": "изба́лованный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id35.mp3"
+  },
+  {
+    "id": 36,
+    "word": "Клеить",
+    "sensitive": "клЕить",
+    "incorrect": "клеи́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id36.mp3"
+  },
+  {
+    "id": 37,
+    "word": "Давнишний",
+    "sensitive": "давнИшний",
+    "incorrect": "да́внишний",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id37.mp3"
+  },
+  {
+    "id": 38,
+    "word": "Ненависть",
+    "sensitive": "нЕнависть",
+    "incorrect": "ненави́сть",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id38.mp3"
+  },
+  {
+    "id": 39,
+    "word": "Звонит",
+    "sensitive": "звонИт",
+    "incorrect": "зво́нит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id39.mp3"
+  },
+  {
+    "id": 40,
+    "word": "Конусы",
+    "sensitive": "кОнусы",
+    "incorrect": "кону́сы",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id40.mp3"
+  },
+  {
+    "id": 41,
+    "word": "Углубить",
+    "sensitive": "углубИть",
+    "incorrect": "углу́бить",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id41.mp3"
+  },
+  {
+    "id": 42,
+    "word": "Начавшись",
+    "sensitive": "начАвшись",
+    "incorrect": "на́чавшись",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id42.mp3"
+  },
+  {
+    "id": 43,
+    "word": "Подняв",
+    "sensitive": "поднЯв",
+    "incorrect": "по́дняв",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id43.mp3"
+  },
+  {
+    "id": 44,
+    "word": "Бухгалтеров",
+    "sensitive": "бухгАлтеров",
+    "incorrect": "бухгалтеро́в",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id44.mp3"
+  },
+  {
+    "id": 45,
+    "word": "Положить",
+    "sensitive": "положИть",
+    "incorrect": "поло́жить",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id45.mp3"
+  },
+  {
+    "id": 46,
+    "word": "Начатый",
+    "sensitive": "нАчатый",
+    "incorrect": "нача́тый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id46.mp3"
+  },
+  {
+    "id": 47,
+    "word": "Дозвонится",
+    "sensitive": "дозвонИтся",
+    "incorrect": "дозво́нится",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id47.mp3"
+  },
+  {
+    "id": 48,
+    "word": "Каталог",
+    "sensitive": "каталОг",
+    "incorrect": "ката́лог",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id48.mp3"
+  },
+  {
+    "id": 49,
+    "word": "Исчерпать",
+    "sensitive": "исчЕрпать",
+    "incorrect": "исчерпа́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id49.mp3"
+  },
+  {
+    "id": 50,
+    "word": "Отозвала",
+    "sensitive": "отозвалА",
+    "incorrect": "отозва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id50.mp3"
+  },
+  {
+    "id": 51,
+    "word": "Поручни",
+    "sensitive": "пОручни",
+    "incorrect": "пору́чни",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id51.mp3"
+  },
+  {
+    "id": 52,
+    "word": "Положил",
+    "sensitive": "положИл",
+    "incorrect": "поло́жил",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id52.mp3"
+  },
+  {
+    "id": 53,
+    "word": "Послала",
+    "sensitive": "послАла",
+    "incorrect": "послала́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id53.mp3"
+  },
+  {
+    "id": 54,
+    "word": "Прирученный",
+    "sensitive": "приручЕнный",
+    "incorrect": "приру́ченный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id54.mp3"
+  },
+  {
+    "id": 55,
+    "word": "Начав",
+    "sensitive": "начАв",
+    "incorrect": "на́чав",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id55.mp3"
+  },
+  {
+    "id": 56,
+    "word": "Бралась",
+    "sensitive": "бралАсь",
+    "incorrect": "бра́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id56.mp3"
+  },
+  {
+    "id": 57,
+    "word": "Недруг",
+    "sensitive": "нЕдруг",
+    "incorrect": "недру́г",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id57.mp3"
+  },
+  {
+    "id": 58,
+    "word": "Озлобить",
+    "sensitive": "озлОбить",
+    "incorrect": "озлоби́ть",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id58.mp3"
+  },
+  {
+    "id": 59,
+    "word": "Вероисповедание",
+    "sensitive": "вероисповЕдание",
+    "incorrect": "вероисповеда́ние",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id59.mp3"
+  },
+  {
+    "id": 60,
+    "word": "Обеспечение",
+    "sensitive": "обеспЕчение",
+    "incorrect": "обеспече́ние",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id60.mp3"
+  },
+  {
+    "id": 61,
+    "word": "Аэропорты",
+    "sensitive": "аэропОрты",
+    "incorrect": "аэро́порты",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id61.mp3"
+  },
+  {
+    "id": 62,
+    "word": "Краны",
+    "sensitive": "крАны",
+    "incorrect": "краны́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id62.mp3"
+  },
+  {
+    "id": 63,
+    "word": "Средствами",
+    "sensitive": "срЕдствами",
+    "incorrect": "средства́ми",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id63.mp3"
+  },
+  {
+    "id": 64,
+    "word": "Лекторы",
+    "sensitive": "лЕкторы",
+    "incorrect": "лекто́ры",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id64.mp3"
+  },
+  {
+    "id": 65,
+    "word": "Отдала",
+    "sensitive": "отдалА",
+    "incorrect": "отда́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id65.mp3"
+  },
+  {
+    "id": 66,
+    "word": "Прибыв",
+    "sensitive": "прибЫв",
+    "incorrect": "при́быв",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id66.mp3"
+  },
+  {
+    "id": 67,
+    "word": "Налита",
+    "sensitive": "налитА",
+    "incorrect": "на́лита",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id67.mp3"
+  },
+  {
+    "id": 68,
+    "word": "Документ",
+    "sensitive": "докумЕнт",
+    "incorrect": "доку́мент",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id68.mp3"
+  },
+  {
+    "id": 69,
+    "word": "Приданое",
+    "sensitive": "придАное",
+    "incorrect": "при́даное",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id69.mp3"
+  },
+  {
+    "id": 70,
+    "word": "Взяла",
+    "sensitive": "взялА",
+    "incorrect": "взя́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id70.mp3"
+  },
+  {
+    "id": 71,
+    "word": "Начала",
+    "sensitive": "началА",
+    "incorrect": "на́чала",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id71.mp3"
+  },
+  {
+    "id": 72,
+    "word": "Ободрала",
+    "sensitive": "ободралА",
+    "incorrect": "ободра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id72.mp3"
+  },
+  {
+    "id": 73,
+    "word": "Заняла",
+    "sensitive": "занялА",
+    "incorrect": "за́няла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id73.mp3"
+  },
+  {
+    "id": 74,
+    "word": "Восприняла",
+    "sensitive": "воспринялА",
+    "incorrect": "воспри́няла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id74.mp3"
+  },
+  {
+    "id": 75,
+    "word": "Вручит",
+    "sensitive": "вручИт",
+    "incorrect": "вру́чит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id75.mp3"
+  },
+  {
+    "id": 76,
+    "word": "Значимый",
+    "sensitive": "знАчимый",
+    "incorrect": "значи́мый",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id76.mp3"
+  },
+  {
+    "id": 77,
+    "word": "Баловать",
+    "sensitive": "баловАть",
+    "incorrect": "ба́ловать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id77.mp3"
+  },
+  {
+    "id": 78,
+    "word": "Иксы",
+    "sensitive": "Иксы",
+    "incorrect": "иксы́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id78.mp3"
+  },
+  {
+    "id": 79,
+    "word": "Надорвалась",
+    "sensitive": "надорвалАсь",
+    "incorrect": "надорва́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id79.mp3"
+  },
+  {
+    "id": 80,
+    "word": "Воссоздала",
+    "sensitive": "воссоздалА",
+    "incorrect": "воссозда́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id80.mp3"
+  },
+  {
+    "id": 81,
+    "word": "Донельзя",
+    "sensitive": "донЕльзя",
+    "incorrect": "до́нельзя",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id81.mp3"
+  },
+  {
+    "id": 82,
+    "word": "Балуясь",
+    "sensitive": "балУясь",
+    "incorrect": "ба́луясь",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id82.mp3"
+  },
+  {
+    "id": 83,
+    "word": "Черпать",
+    "sensitive": "чЕрпать",
+    "incorrect": "черпа́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id83.mp3"
+  },
+  {
+    "id": 84,
+    "word": "Загодя",
+    "sensitive": "зАгодя",
+    "incorrect": "загодя́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id84.mp3"
+  },
+  {
+    "id": 85,
+    "word": "Верна",
+    "sensitive": "вернА",
+    "incorrect": "ве́рна",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id85.mp3"
+  },
+  {
+    "id": 86,
+    "word": "Включенный",
+    "sensitive": "включЕнный",
+    "incorrect": "вклю́ченный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id86.mp3"
+  },
+  {
+    "id": 87,
+    "word": "Красивее",
+    "sensitive": "красИвее",
+    "incorrect": "красиве́е",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id87.mp3"
+  },
+  {
+    "id": 88,
+    "word": "Заселен",
+    "sensitive": "заселЕн",
+    "incorrect": "засе́лен",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id88.mp3"
+  },
+  {
+    "id": 89,
+    "word": "Наливший",
+    "sensitive": "налИвший",
+    "incorrect": "на́ливший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id89.mp3"
+  },
+  {
+    "id": 90,
+    "word": "Инстинкт",
+    "sensitive": "инстИнкт",
+    "incorrect": "и́нстинкт",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id90.mp3"
+  },
+  {
+    "id": 91,
+    "word": "Наверх",
+    "sensitive": "навЕрх",
+    "incorrect": "на́верх",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id91.mp3"
+  },
+  {
+    "id": 92,
+    "word": "Призыв",
+    "sensitive": "призЫв",
+    "incorrect": "при́зыв",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id92.mp3"
+  },
+  {
+    "id": 93,
+    "word": "Прибыло",
+    "sensitive": "прИбыло",
+    "incorrect": "прибыло́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id93.mp3"
+  },
+  {
+    "id": 94,
+    "word": "Начал",
+    "sensitive": "нАчал",
+    "incorrect": "нача́л",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id94.mp3"
+  },
+  {
+    "id": 95,
+    "word": "Позвала",
+    "sensitive": "позвалА",
+    "incorrect": "позва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id95.mp3"
+  },
+  {
+    "id": 96,
+    "word": "Сливовый",
+    "sensitive": "слИвовый",
+    "incorrect": "сливо́вый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id96.mp3"
+  },
+  {
+    "id": 97,
+    "word": "Налила",
+    "sensitive": "налилА",
+    "incorrect": "нали́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id97.mp3"
+  },
+  {
+    "id": 98,
+    "word": "Намерение",
+    "sensitive": "намЕрение",
+    "incorrect": "намере́ние",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id98.mp3"
+  },
+  {
+    "id": 99,
+    "word": "Нажита",
+    "sensitive": "нажитА",
+    "incorrect": "на́жита",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id99.mp3"
+  },
+  {
+    "id": 100,
+    "word": "Начали",
+    "sensitive": "нАчали",
+    "incorrect": "начали́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id100.mp3"
+  },
+  {
+    "id": 101,
+    "word": "Молящий",
+    "sensitive": "молЯщий",
+    "incorrect": "мо́лящий",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id101.mp3"
+  },
+  {
+    "id": 102,
+    "word": "Жилось",
+    "sensitive": "жилОсь",
+    "incorrect": "жи́лось",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id102.mp3"
+  },
+  {
+    "id": 103,
+    "word": "Наделит",
+    "sensitive": "наделИт",
+    "incorrect": "наде́лит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id103.mp3"
+  },
+  {
+    "id": 104,
+    "word": "Гражданство",
+    "sensitive": "граждАнство",
+    "incorrect": "гра́жданство",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id104.mp3"
+  },
+  {
+    "id": 105,
+    "word": "Звоним",
+    "sensitive": "звонИм",
+    "incorrect": "зво́ним",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id105.mp3"
+  },
+  {
+    "id": 106,
+    "word": "Нажился",
+    "sensitive": "нажИлся",
+    "incorrect": "на́жился",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id106.mp3"
+  },
+  {
+    "id": 107,
+    "word": "Шарфы",
+    "sensitive": "шАрфы",
+    "incorrect": "шарфы́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id107.mp3"
+  },
+  {
+    "id": 108,
+    "word": "Опломбировать",
+    "sensitive": "опломбировАть",
+    "incorrect": "опломби́ровать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id108.mp3"
+  },
+  {
+    "id": 109,
+    "word": "Шофер",
+    "sensitive": "шофЕр",
+    "incorrect": "шо́фер",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id109.mp3"
+  },
+  {
+    "id": 110,
+    "word": "Плодоносить",
+    "sensitive": "плодоносИть",
+    "incorrect": "плодоно́сить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id110.mp3"
+  },
+  {
+    "id": 111,
+    "word": "Исключит",
+    "sensitive": "исключИт",
+    "incorrect": "исклю́чит",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id111.mp3"
+  },
+  {
+    "id": 112,
+    "word": "Прибыла",
+    "sensitive": "прибылА",
+    "incorrect": "при́была",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id112.mp3"
+  },
+  {
+    "id": 113,
+    "word": "Клала",
+    "sensitive": "клАла",
+    "incorrect": "клала́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id113.mp3"
+  },
+  {
+    "id": 114,
+    "word": "Включим",
+    "sensitive": "включИм",
+    "incorrect": "вклю́чим",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id114.mp3"
+  },
+  {
+    "id": 115,
+    "word": "Центнер",
+    "sensitive": "цЕнтнер",
+    "incorrect": "центне́р",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id115.mp3"
+  },
+  {
+    "id": 116,
+    "word": "Кормящий",
+    "sensitive": "кормЯщий",
+    "incorrect": "ко́рмящий",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id116.mp3"
+  },
+  {
+    "id": 117,
+    "word": "Создала",
+    "sensitive": "создалА",
+    "incorrect": "созда́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id117.mp3"
+  },
+  {
+    "id": 118,
+    "word": "Ободрена",
+    "sensitive": "ободренА",
+    "incorrect": "обо́дрена",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id118.mp3"
+  },
+  {
+    "id": 119,
+    "word": "Бренчащая",
+    "sensitive": "бренчАщая",
+    "incorrect": "бре́нчащая",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id119.mp3"
+  },
+  {
+    "id": 120,
+    "word": "Заперта",
+    "sensitive": "запертА",
+    "incorrect": "за́перта",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id120.mp3"
+  },
+  {
+    "id": 121,
+    "word": "Кровоточить",
+    "sensitive": "кровоточИть",
+    "incorrect": "кровото́чить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id121.mp3"
+  },
+  {
+    "id": 122,
+    "word": "Алфавит",
+    "sensitive": "алфавИт",
+    "incorrect": "алфа́вит",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id122.mp3"
+  },
+  {
+    "id": 123,
+    "word": "Вовремя",
+    "sensitive": "вОвремя",
+    "incorrect": "вовре́мя",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id123.mp3"
+  },
+  {
+    "id": 124,
+    "word": "Ловка",
+    "sensitive": "ловкА",
+    "incorrect": "ло́вка",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id124.mp3"
+  },
+  {
+    "id": 125,
+    "word": "Влилась",
+    "sensitive": "влилАсь",
+    "incorrect": "вли́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id125.mp3"
+  },
+  {
+    "id": 126,
+    "word": "Обогнала",
+    "sensitive": "обогналА",
+    "incorrect": "обогна́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id126.mp3"
+  },
+  {
+    "id": 127,
+    "word": "Завидно",
+    "sensitive": "завИдно",
+    "incorrect": "за́видно",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id127.mp3"
+  },
+  {
+    "id": 128,
+    "word": "Заняло",
+    "sensitive": "зАняло",
+    "incorrect": "заня́ло",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id128.mp3"
+  },
+  {
+    "id": 129,
+    "word": "Звонишь",
+    "sensitive": "звонИшь",
+    "incorrect": "зво́нишь",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id129.mp3"
+  },
+  {
+    "id": 130,
+    "word": "Цемент",
+    "sensitive": "цемЕнт",
+    "incorrect": "це́мент",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id130.mp3"
+  },
+  {
+    "id": 131,
+    "word": "Добралась",
+    "sensitive": "добралАсь",
+    "incorrect": "добра́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id131.mp3"
+  },
+  {
+    "id": 132,
+    "word": "Засветло",
+    "sensitive": "зАсветло",
+    "incorrect": "засветло́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id132.mp3"
+  },
+  {
+    "id": 133,
+    "word": "Эксперт",
+    "sensitive": "экспЕрт",
+    "incorrect": "э́ксперт",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id133.mp3"
+  },
+  {
+    "id": 134,
+    "word": "Затемно",
+    "sensitive": "зАтемно",
+    "incorrect": "зате́мно",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id134.mp3"
+  },
+  {
+    "id": 135,
+    "word": "Балованный",
+    "sensitive": "балОванный",
+    "incorrect": "ба́лованный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id135.mp3"
+  },
+  {
+    "id": 136,
+    "word": "Ждала",
+    "sensitive": "ждалА",
+    "incorrect": "жда́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id136.mp3"
+  },
+  {
+    "id": 137,
+    "word": "Новости",
+    "sensitive": "нОвости",
+    "incorrect": "ново́сти",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id137.mp3"
+  },
+  {
+    "id": 138,
+    "word": "Местностей",
+    "sensitive": "мЕстностей",
+    "incorrect": "местносте́й",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id138.mp3"
+  },
+  {
+    "id": 139,
+    "word": "Добела",
+    "sensitive": "добелА",
+    "incorrect": "добе́ла",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id139.mp3"
+  },
+  {
+    "id": 140,
+    "word": "Договоренность",
+    "sensitive": "договорЕнность",
+    "incorrect": "догово́ренность",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id140.mp3"
+  },
+  {
+    "id": 141,
+    "word": "Кухонный",
+    "sensitive": "кУхонный",
+    "incorrect": "кухо́нный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id141.mp3"
+  },
+  {
+    "id": 142,
+    "word": "Включишь",
+    "sensitive": "включИшь",
+    "incorrect": "вклю́чишь",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id142.mp3"
+  },
+  {
+    "id": 143,
+    "word": "Надолго",
+    "sensitive": "надОлго",
+    "incorrect": "на́долго",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id143.mp3"
+  },
+  {
+    "id": 144,
+    "word": "Включен",
+    "sensitive": "включЕн",
+    "incorrect": "вклю́чен",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id144.mp3"
+  },
+  {
+    "id": 145,
+    "word": "Начавший",
+    "sensitive": "начАвший",
+    "incorrect": "на́чавший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id145.mp3"
+  },
+  {
+    "id": 146,
+    "word": "Сверлишь",
+    "sensitive": "сверлИшь",
+    "incorrect": "све́рлишь",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id146.mp3"
+  },
+  {
+    "id": 147,
+    "word": "Оптовый",
+    "sensitive": "оптОвый",
+    "incorrect": "о́птовый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id147.mp3"
+  },
+  {
+    "id": 148,
+    "word": "Позвонит",
+    "sensitive": "позвонИт",
+    "incorrect": "позво́нит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id148.mp3"
+  },
+  {
+    "id": 149,
+    "word": "Ворвалась",
+    "sensitive": "ворвалАсь",
+    "incorrect": "ворва́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id149.mp3"
+  },
+  {
+    "id": 150,
+    "word": "Таможня",
+    "sensitive": "тамОжня",
+    "incorrect": "та́можня",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id150.mp3"
+  },
+  {
+    "id": 151,
+    "word": "Приняли",
+    "sensitive": "прИняли",
+    "incorrect": "приня́ли",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id151.mp3"
+  },
+  {
+    "id": 152,
+    "word": "Загнутый",
+    "sensitive": "зАгнутый",
+    "incorrect": "загну́тый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id152.mp3"
+  },
+  {
+    "id": 153,
+    "word": "Поделенный",
+    "sensitive": "поделЕнный",
+    "incorrect": "поде́ленный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id153.mp3"
+  },
+  {
+    "id": 154,
+    "word": "Взялась",
+    "sensitive": "взялАсь",
+    "incorrect": "взя́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id154.mp3"
+  },
+  {
+    "id": 155,
+    "word": "Лгала",
+    "sensitive": "лгалА",
+    "incorrect": "лга́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id155.mp3"
+  },
+  {
+    "id": 156,
+    "word": "Отрочество",
+    "sensitive": "Отрочество",
+    "incorrect": "отро́чество",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id156.mp3"
+  },
+  {
+    "id": 157,
+    "word": "Банты",
+    "sensitive": "бАнты",
+    "incorrect": "банты́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id157.mp3"
+  },
+  {
+    "id": 158,
+    "word": "Докрасна",
+    "sensitive": "докраснА",
+    "incorrect": "докра́сна",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id158.mp3"
+  },
+  {
+    "id": 159,
+    "word": "Километр",
+    "sensitive": "киломЕтр",
+    "incorrect": "кило́метр",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id159.mp3"
+  },
+  {
+    "id": 160,
+    "word": "Досуг",
+    "sensitive": "досУг",
+    "incorrect": "до́суг",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id160.mp3"
+  },
+  {
+    "id": 161,
+    "word": "Жалюзи",
+    "sensitive": "жалюзИ",
+    "incorrect": "жа́люзи",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id161.mp3"
+  },
+  {
+    "id": 162,
+    "word": "Исстари",
+    "sensitive": "Исстари",
+    "incorrect": "исста́ри",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id162.mp3"
+  },
+  {
+    "id": 163,
+    "word": "Статуя",
+    "sensitive": "стАтуя",
+    "incorrect": "стату́я",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id163.mp3"
+  },
+  {
+    "id": 164,
+    "word": "Щемит",
+    "sensitive": "щемИт",
+    "incorrect": "ще́мит",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id164.mp3"
+  },
+  {
+    "id": 165,
+    "word": "Донизу",
+    "sensitive": "дОнизу",
+    "incorrect": "дони́зу",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id165.mp3"
+  },
+  {
+    "id": 166,
+    "word": "Отключенный",
+    "sensitive": "отключЕнный",
+    "incorrect": "отклю́ченный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id166.mp3"
+  },
+  {
+    "id": 167,
+    "word": "Кралась",
+    "sensitive": "крАлась",
+    "incorrect": "крала́сь",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id167.mp3"
+  },
+  {
+    "id": 168,
+    "word": "Наживший",
+    "sensitive": "нажИвший",
+    "incorrect": "на́живший",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id168.mp3"
+  },
+  {
+    "id": 169,
+    "word": "Недуг",
+    "sensitive": "недУг",
+    "incorrect": "не́дуг",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id169.mp3"
+  },
+  {
+    "id": 170,
+    "word": "Довезенный",
+    "sensitive": "довезЕнный",
+    "incorrect": "дове́зенный",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id170.mp3"
+  },
+  {
+    "id": 171,
+    "word": "Опошлят",
+    "sensitive": "опОшлят",
+    "incorrect": "опошля́т",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id171.mp3"
+  },
+  {
+    "id": 172,
+    "word": "Кровоточащий",
+    "sensitive": "кровоточАщий",
+    "incorrect": "кровото́чащий",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id172.mp3"
+  },
+  {
+    "id": 173,
+    "word": "Лила",
+    "sensitive": "лилА",
+    "incorrect": "ли́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id173.mp3"
+  },
+  {
+    "id": 174,
+    "word": "Лыжням",
+    "sensitive": "лыжнЯм",
+    "incorrect": "лы́жням",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id174.mp3"
+  },
+  {
+    "id": 175,
+    "word": "Принятый",
+    "sensitive": "прИнятый",
+    "incorrect": "приня́тый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id175.mp3"
+  },
+  {
+    "id": 176,
+    "word": "Столяр",
+    "sensitive": "столЯр",
+    "incorrect": "сто́ляр",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id176.mp3"
+  },
+  {
+    "id": 177,
+    "word": "Откупорил",
+    "sensitive": "откУпорил",
+    "incorrect": "откупо́рил",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id177.mp3"
+  },
+  {
+    "id": 178,
+    "word": "Отозвалась",
+    "sensitive": "отозвалАсь",
+    "incorrect": "отозва́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id178.mp3"
+  },
+  {
+    "id": 179,
+    "word": "Включит",
+    "sensitive": "включИт",
+    "incorrect": "вклю́чит",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id179.mp3"
+  },
+  {
+    "id": 180,
+    "word": "Сироты",
+    "sensitive": "сирОты",
+    "incorrect": "си́роты",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id180.mp3"
+  },
+  {
+    "id": 181,
+    "word": "Занятый",
+    "sensitive": "зАнятый",
+    "incorrect": "заня́тый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id181.mp3"
+  },
+  {
+    "id": 182,
+    "word": "Новостей",
+    "sensitive": "новостЕй",
+    "incorrect": "но́востей",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id182.mp3"
+  },
+  {
+    "id": 183,
+    "word": "Ободришься",
+    "sensitive": "ободрИшься",
+    "incorrect": "обо́дришься",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id183.mp3"
+  },
+  {
+    "id": 184,
+    "word": "Кренится",
+    "sensitive": "кренИтся",
+    "incorrect": "кре́нится",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id184.mp3"
+  },
+  {
+    "id": 185,
+    "word": "Одолжит",
+    "sensitive": "одолжИт",
+    "incorrect": "одо́лжит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id185.mp3"
+  },
+  {
+    "id": 186,
+    "word": "Нарвала",
+    "sensitive": "нарвалА",
+    "incorrect": "нарва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id186.mp3"
+  },
+  {
+    "id": 187,
+    "word": "Дозвонятся",
+    "sensitive": "дозвонЯтся",
+    "incorrect": "дозво́нятся",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id187.mp3"
+  },
+  {
+    "id": 188,
+    "word": "Конусов",
+    "sensitive": "кОнусов",
+    "incorrect": "конусо́в",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id188.mp3"
+  },
+  {
+    "id": 189,
+    "word": "Сорит",
+    "sensitive": "сорИт",
+    "incorrect": "со́рит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id189.mp3"
+  },
+  {
+    "id": 190,
+    "word": "Кремень",
+    "sensitive": "кремЕнь",
+    "incorrect": "кре́мень",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id190.mp3"
+  },
+  {
+    "id": 191,
+    "word": "Щавель",
+    "sensitive": "щавЕль",
+    "incorrect": "ща́вель",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id191.mp3"
+  },
+  {
+    "id": 192,
+    "word": "Занял",
+    "sensitive": "зАнял",
+    "incorrect": "заня́л",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id192.mp3"
+  },
+  {
+    "id": 193,
+    "word": "Убыстрить",
+    "sensitive": "убыстрИть",
+    "incorrect": "убы́стрить",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id193.mp3"
+  },
+  {
+    "id": 194,
+    "word": "Поняла",
+    "sensitive": "понялА",
+    "incorrect": "по́няла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id194.mp3"
+  },
+  {
+    "id": 195,
+    "word": "Средства",
+    "sensitive": "срЕдства",
+    "incorrect": "средства́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id195.mp3"
+  },
+  {
+    "id": 196,
+    "word": "Имперский",
+    "sensitive": "импЕрский",
+    "incorrect": "и́мперский",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id196.mp3"
+  },
+  {
+    "id": 197,
+    "word": "Перелила",
+    "sensitive": "перелилА",
+    "incorrect": "перели́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id197.mp3"
+  },
+  {
+    "id": 198,
+    "word": "Облилась",
+    "sensitive": "облилАсь",
+    "incorrect": "обли́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id198.mp3"
+  },
+  {
+    "id": 199,
+    "word": "Насорит",
+    "sensitive": "насорИт",
+    "incorrect": "насо́рит",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id199.mp3"
+  },
+  {
+    "id": 200,
+    "word": "Щелкать",
+    "sensitive": "щЕлкать",
+    "incorrect": "щелка́ть",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id200.mp3"
+  },
+  {
+    "id": 201,
+    "word": "Бороду",
+    "sensitive": "бОроду",
+    "incorrect": "бороду́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id201.mp3"
+  },
+  {
+    "id": 202,
+    "word": "Рвала",
+    "sensitive": "рвалА",
+    "incorrect": "рва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id202.mp3"
+  },
+  {
+    "id": 203,
+    "word": "Закупорить",
+    "sensitive": "закУпорить",
+    "incorrect": "закупо́рить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id203.mp3"
+  },
+  {
+    "id": 204,
+    "word": "Прибыл",
+    "sensitive": "прИбыл",
+    "incorrect": "прибы́л",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id204.mp3"
+  },
+  {
+    "id": 205,
+    "word": "Поняв",
+    "sensitive": "понЯв",
+    "incorrect": "по́няв",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id205.mp3"
+  },
+  {
+    "id": 206,
+    "word": "Согнутый",
+    "sensitive": "сОгнутый",
+    "incorrect": "согну́тый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id206.mp3"
+  },
+  {
+    "id": 207,
+    "word": "Мозаичный",
+    "sensitive": "мозаИчный",
+    "incorrect": "моза́ичный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id207.mp3"
+  },
+  {
+    "id": 208,
+    "word": "Отдав",
+    "sensitive": "отдАв",
+    "incorrect": "о́тдав",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id208.mp3"
+  },
+  {
+    "id": 209,
+    "word": "Верба",
+    "sensitive": "вЕрба",
+    "incorrect": "верба́",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id209.mp3"
+  },
+  {
+    "id": 210,
+    "word": "Диспансер",
+    "sensitive": "диспансЕр",
+    "incorrect": "диспа́нсер",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id210.mp3"
+  },
+  {
+    "id": 211,
+    "word": "Гналась",
+    "sensitive": "гналАсь",
+    "incorrect": "гна́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id211.mp3"
+  },
+  {
+    "id": 212,
+    "word": "Значимость",
+    "sensitive": "знАчимость",
+    "incorrect": "значи́мость",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id212.mp3"
+  },
+  {
+    "id": 213,
+    "word": "Наврала",
+    "sensitive": "навралА",
+    "incorrect": "навра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id213.mp3"
+  },
+  {
+    "id": 214,
+    "word": "Ненадолго",
+    "sensitive": "ненадОлго",
+    "incorrect": "нена́долго",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id214.mp3"
+  },
+  {
+    "id": 215,
+    "word": "Накренит",
+    "sensitive": "накренИт",
+    "incorrect": "накре́нит",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id215.mp3"
+  },
+  {
+    "id": 216,
+    "word": "Дозировать",
+    "sensitive": "дозИровать",
+    "incorrect": "дозирова́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id216.mp3"
+  },
+  {
+    "id": 217,
+    "word": "Окружит",
+    "sensitive": "окружИт",
+    "incorrect": "окру́жит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id217.mp3"
+  },
+  {
+    "id": 218,
+    "word": "Обострить",
+    "sensitive": "обострИть",
+    "incorrect": "обо́стрить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id218.mp3"
+  },
+  {
+    "id": 219,
+    "word": "Принял",
+    "sensitive": "прИнял",
+    "incorrect": "приня́л",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id219.mp3"
+  },
+  {
+    "id": 220,
+    "word": "Дождалась",
+    "sensitive": "дождалАсь",
+    "incorrect": "дожда́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id220.mp3"
+  },
+  {
+    "id": 221,
+    "word": "Брала",
+    "sensitive": "бралА",
+    "incorrect": "бра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id221.mp3"
+  },
+  {
+    "id": 222,
+    "word": "Обостренный",
+    "sensitive": "обострЕнный",
+    "incorrect": "обо́стренный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id222.mp3"
+  },
+  {
+    "id": 223,
+    "word": "Зимовщик",
+    "sensitive": "зимОвщик",
+    "incorrect": "зимовщи́к",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id223.mp3"
+  },
+  {
+    "id": 224,
+    "word": "Облегчит",
+    "sensitive": "облегчИт",
+    "incorrect": "обле́гчит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id224.mp3"
+  },
+  {
+    "id": 225,
+    "word": "Сверлит",
+    "sensitive": "сверлИт",
+    "incorrect": "све́рлит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id225.mp3"
+  },
+  {
+    "id": 226,
+    "word": "Ободрить",
+    "sensitive": "ободрИть",
+    "incorrect": "обо́дрить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id226.mp3"
+  },
+  {
+    "id": 227,
+    "word": "Торты",
+    "sensitive": "тОрты",
+    "incorrect": "торты́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id227.mp3"
+  },
+  {
+    "id": 228,
+    "word": "Партер",
+    "sensitive": "партЕр",
+    "incorrect": "па́ртер",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id228.mp3"
+  },
+  {
+    "id": 229,
+    "word": "Низведен",
+    "sensitive": "низведЕн",
+    "incorrect": "низве́ден",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id229.mp3"
+  },
+  {
+    "id": 230,
+    "word": "Процент",
+    "sensitive": "процЕнт",
+    "incorrect": "про́цент",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id230.mp3"
+  },
+  {
+    "id": 231,
+    "word": "Обзвонит",
+    "sensitive": "обзвонИт",
+    "incorrect": "обзво́нит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id231.mp3"
+  },
+  {
+    "id": 232,
+    "word": "Доверху",
+    "sensitive": "дОверху",
+    "incorrect": "дове́рху",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id232.mp3"
+  },
+  {
+    "id": 233,
+    "word": "Дефис",
+    "sensitive": "дефИс",
+    "incorrect": "де́фис",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id233.mp3"
+  },
+  {
+    "id": 234,
+    "word": "Прозорлива",
+    "sensitive": "прозорлИва",
+    "incorrect": "прозо́рлива",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id234.mp3"
+  },
+  {
+    "id": 235,
+    "word": "Определен",
+    "sensitive": "определЕн",
+    "incorrect": "опре́делен",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id235.mp3"
+  },
+  {
+    "id": 236,
+    "word": "Портфель",
+    "sensitive": "портфЕль",
+    "incorrect": "по́ртфель",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id236.mp3"
+  },
+  {
+    "id": 237,
+    "word": "Понял",
+    "sensitive": "пОнял",
+    "incorrect": "поня́л",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id237.mp3"
+  },
+  {
+    "id": 238,
+    "word": "Убрала",
+    "sensitive": "убралА",
+    "incorrect": "убра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id238.mp3"
+  },
+  {
+    "id": 239,
+    "word": "Занята",
+    "sensitive": "занятА",
+    "incorrect": "за́нята",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id239.mp3"
+  },
+  {
+    "id": 240,
+    "word": "Гнала",
+    "sensitive": "гналА",
+    "incorrect": "гна́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id240.mp3"
+  },
+  {
+    "id": 241,
+    "word": "Цепочка",
+    "sensitive": "цепОчка",
+    "incorrect": "це́почка",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id241.mp3"
+  },
+  {
+    "id": 242,
+    "word": "Обнялась",
+    "sensitive": "обнялАсь",
+    "incorrect": "обня́лась",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id242.mp3"
+  },
+  {
+    "id": 243,
+    "word": "Ногтя",
+    "sensitive": "нОгтя",
+    "incorrect": "ногтя́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id243.mp3"
+  },
+  {
+    "id": 244,
+    "word": "Закупорив",
+    "sensitive": "закУпорив",
+    "incorrect": "закупо́рив",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id244.mp3"
+  },
+  {
+    "id": 245,
+    "word": "Гравированный",
+    "sensitive": "гравирОванный",
+    "incorrect": "грави́рованный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id245.mp3"
+  },
+  {
+    "id": 246,
+    "word": "Дешевизна",
+    "sensitive": "дешевИзна",
+    "incorrect": "дешевизна́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id246.mp3"
+  },
+  {
+    "id": 247,
+    "word": "Диалог",
+    "sensitive": "диалОг",
+    "incorrect": "диа́лог",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id247.mp3"
+  },
+  {
+    "id": 248,
+    "word": "Монолог",
+    "sensitive": "монолОг",
+    "incorrect": "моно́лог",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id248.mp3"
+  },
+  {
+    "id": 249,
+    "word": "Некролог",
+    "sensitive": "некролОг",
+    "incorrect": "некро́лог",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id249.mp3"
+  },
+  {
+    "id": 250,
+    "word": "Сантиметр",
+    "sensitive": "сантимЕтр",
+    "incorrect": "санти́метр",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id250.mp3"
+  },
+  {
+    "id": 251,
+    "word": "Дециметр",
+    "sensitive": "децимЕтр",
+    "incorrect": "деци́метр",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id251.mp3"
+  },
+  {
+    "id": 252,
+    "word": "Миллиметр",
+    "sensitive": "миллимЕтр",
+    "incorrect": "милли́метр",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id252.mp3"
+  },
+  {
+    "id": 253,
+    "word": "Кремня",
+    "sensitive": "кремнЯ",
+    "incorrect": "кре́мня",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id253.mp3"
+  },
+  {
+    "id": 254,
+    "word": "Лекторов",
+    "sensitive": "лЕкторов",
+    "incorrect": "лекторо́в",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id254.mp3"
+  },
+  {
+    "id": 255,
+    "word": "Лыжня",
+    "sensitive": "лыжнЯ",
+    "incorrect": "лы́жня",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id255.mp3"
+  },
+  {
+    "id": 256,
+    "word": "Почестей",
+    "sensitive": "пОчестей",
+    "incorrect": "почесте́й",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id256.mp3"
+  },
+  {
+    "id": 257,
+    "word": "Челюстей",
+    "sensitive": "чЕлюстей",
+    "incorrect": "челюсте́й",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id257.mp3"
+  },
+  {
+    "id": 258,
+    "word": "Газопровод",
+    "sensitive": "газопровОд",
+    "incorrect": "газопро́вод",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id258.mp3"
+  },
+  {
+    "id": 259,
+    "word": "Нефтепровод",
+    "sensitive": "нефтепровОд",
+    "incorrect": "нефтепро́вод",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id259.mp3"
+  },
+  {
+    "id": 260,
+    "word": "Водопровод",
+    "sensitive": "водопровОд",
+    "incorrect": "водопро́вод",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id260.mp3"
+  },
+  {
+    "id": 261,
+    "word": "Отрок",
+    "sensitive": "Отрок",
+    "incorrect": "отро́к",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id261.mp3"
+  },
+  {
+    "id": 262,
+    "word": "Маляр",
+    "sensitive": "малЯр",
+    "incorrect": "ма́ляр",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id262.mp3"
+  },
+  {
+    "id": 263,
+    "word": "Дояр",
+    "sensitive": "доЯр",
+    "incorrect": "до́яр",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id263.mp3"
+  },
+  {
+    "id": 264,
+    "word": "Школяр",
+    "sensitive": "школЯр",
+    "incorrect": "шко́ляр",
+    "pronounceable": false,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id264.mp3"
+  },
+  {
+    "id": 265,
+    "word": "Заперла",
+    "sensitive": "заперлА",
+    "incorrect": "за́перла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id265.mp3"
+  },
+  {
+    "id": 266,
+    "word": "Заперлась",
+    "sensitive": "заперлАсь",
+    "incorrect": "за́перлась",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id266.mp3"
+  },
+  {
+    "id": 267,
+    "word": "Накренится",
+    "sensitive": "накренИтся",
+    "incorrect": "накре́нится",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id267.mp3"
+  },
+  {
+    "id": 268,
+    "word": "Прожорлива",
+    "sensitive": "прожОрлива",
+    "incorrect": "прожорли́ва",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id268.mp3"
+  },
+  {
+    "id": 269,
+    "word": "Форматировать",
+    "sensitive": "форматИровать",
+    "incorrect": "форматирова́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id269.mp3"
+  },
+  {
+    "id": 270,
+    "word": "Нормировать",
+    "sensitive": "нормировАть",
+    "incorrect": "норми́ровать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id270.mp3"
+  },
+  {
+    "id": 271,
+    "word": "Сортировать",
+    "sensitive": "сортировАть",
+    "incorrect": "сорти́ровать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id271.mp3"
+  },
+  {
+    "id": 272,
+    "word": "Премировать",
+    "sensitive": "премировАть",
+    "incorrect": "преми́ровать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id272.mp3"
+  },
+  {
+    "id": 273,
+    "word": "Опошлить",
+    "sensitive": "опОшлить",
+    "incorrect": "опошли́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id273.mp3"
+  },
+  {
+    "id": 274,
+    "word": "Повторит",
+    "sensitive": "повторИт",
+    "incorrect": "повто́рит",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id274.mp3"
+  },
+  {
+    "id": 275,
+    "word": "Приняла",
+    "sensitive": "принялА",
+    "incorrect": "при́няла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id275.mp3"
+  },
+  {
+    "id": 276,
+    "word": "Осведомишься",
+    "sensitive": "освЕдомишься",
+    "incorrect": "осведоми́шься",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id276.mp3"
+  },
+  {
+    "id": 277,
+    "word": "Сорвала",
+    "sensitive": "сорвалА",
+    "incorrect": "сорва́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id277.mp3"
+  },
+  {
+    "id": 278,
+    "word": "Защемит",
+    "sensitive": "защемИт",
+    "incorrect": "заще́мит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id278.mp3"
+  },
+  {
+    "id": 279,
+    "word": "Заселена",
+    "sensitive": "заселенА",
+    "incorrect": "засе́лена",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id279.mp3"
+  },
+  {
+    "id": 280,
+    "word": "Создав",
+    "sensitive": "создАв",
+    "incorrect": "со́здав",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id280.mp3"
+  },
+  {
+    "id": 281,
+    "word": "Начата",
+    "sensitive": "начатА",
+    "incorrect": "на́чата",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id281.mp3"
+  },
+  {
+    "id": 282,
+    "word": "Повторенный",
+    "sensitive": "повторЕнный",
+    "incorrect": "повто́ренный",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id282.mp3"
+  },
+  {
+    "id": 283,
+    "word": "Кружево",
+    "sensitive": "крУжево",
+    "incorrect": "кружево́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id283.mp3"
+  },
+  {
+    "id": 284,
+    "word": "Кружева",
+    "sensitive": "кружевА",
+    "incorrect": "кру́жева",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id284.mp3"
+  },
+  {
+    "id": 285,
+    "word": "Украинский",
+    "sensitive": "украИнский",
+    "incorrect": "укра́инский",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id285.mp3"
+  },
+  {
+    "id": 286,
+    "word": "Плато",
+    "sensitive": "платО",
+    "incorrect": "пла́то",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id286.mp3"
+  },
+  {
+    "id": 287,
+    "word": "Трюфели",
+    "sensitive": "трЮфели",
+    "incorrect": "трюфе́ли",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id287.mp3"
+  },
+  {
+    "id": 288,
+    "word": "Электропровод",
+    "sensitive": "электропрОвод",
+    "incorrect": "электропрово́д",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id288.mp3"
+  },
+  {
+    "id": 289,
+    "word": "Бармен",
+    "sensitive": "бАрмен",
+    "incorrect": "барме́н",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id289.mp3"
+  },
+  {
+    "id": 290,
+    "word": "Мастерски",
+    "sensitive": "мастерскИ",
+    "incorrect": "ма́стерски",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id290.mp3"
+  },
+  {
+    "id": 291,
+    "word": "Новорожденный",
+    "sensitive": "новорождЕнный",
+    "incorrect": "новоро́жденный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id291.mp3"
+  },
+  {
+    "id": 292,
+    "word": "Пуловер",
+    "sensitive": "пулОвер",
+    "incorrect": "пулове́р",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id292.mp3"
+  },
+  {
+    "id": 293,
+    "word": "Танцовщица",
+    "sensitive": "танцОвщица",
+    "incorrect": "танцовщица́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id293.mp3"
+  },
+  {
+    "id": 294,
+    "word": "Танцовщик",
+    "sensitive": "танцОвщик",
+    "incorrect": "танцовщи́к",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id294.mp3"
+  },
+  {
+    "id": 295,
+    "word": "Тирамису",
+    "sensitive": "тирамисУ",
+    "incorrect": "тира́мису",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id295.mp3"
+  },
+  {
+    "id": 296,
+    "word": "Шасси",
+    "sensitive": "шассИ",
+    "incorrect": "ша́сси",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id296.mp3"
+  },
+  {
+    "id": 297,
+    "word": "Апостроф",
+    "sensitive": "апострОф",
+    "incorrect": "апо́строф",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id297.mp3"
+  },
+  {
+    "id": 298,
+    "word": "Логин",
+    "sensitive": "логИн",
+    "incorrect": "ло́гин",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id298.mp3"
+  },
+  {
+    "id": 299,
+    "word": "Граффити",
+    "sensitive": "граффИти",
+    "incorrect": "гра́ффити",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id299.mp3"
+  },
+  {
+    "id": 300,
+    "word": "Взяты",
+    "sensitive": "взЯты",
+    "incorrect": "взяты́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id300.mp3"
+  },
+  {
+    "id": 301,
+    "word": "Локтя",
+    "sensitive": "лОктя",
+    "incorrect": "локтя́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.co/storage/v1/object/public/audio/id301.mp3"
+  },
+  {
+    "id": 302,
+    "word": "Локтей",
+    "sensitive": "локтЕй",
+    "incorrect": "ло́ктей",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id302.mp3"
+  },
+  {
+    "id": 303,
+    "word": "Ногтей",
+    "sensitive": "ногтЕй",
+    "incorrect": "но́гтей",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id303.mp3"
+  },
+  {
+    "id": 304,
+    "word": "Сосредоточение",
+    "sensitive": "сосредотОчение",
+    "incorrect": "сосредоточе́ние",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id304.mp3"
+  },
+  {
+    "id": 305,
+    "word": "Туфля",
+    "sensitive": "тУфля",
+    "incorrect": "туфля́",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id305.mp3"
+  },
+  {
+    "id": 306,
+    "word": "Прозорливый",
+    "sensitive": "прозорлИвый",
+    "incorrect": "прозо́рливый",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id306.mp3"
+  },
+  {
+    "id": 307,
+    "word": "Воспринять",
+    "sensitive": "воспринЯть",
+    "incorrect": "воспри́нять",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id307.mp3"
+  },
+  {
+    "id": 308,
+    "word": "Занять",
+    "sensitive": "занЯть",
+    "incorrect": "за́нять",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id308.mp3"
+  },
+  {
+    "id": 309,
+    "word": "Заняли",
+    "sensitive": "зАняли",
+    "incorrect": "заня́ли",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id309.mp3"
+  },
+  {
+    "id": 310,
+    "word": "Запломбировать",
+    "sensitive": "запломбировАть",
+    "incorrect": "запломби́ровать",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id310.mp3"
+  },
+  {
+    "id": 311,
+    "word": "Кашлянуть",
+    "sensitive": "кАшлянуть",
+    "incorrect": "кашляну́ть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id311.mp3"
+  },
+  {
+    "id": 312,
+    "word": "Ободрит",
+    "sensitive": "ободрИт",
+    "incorrect": "обо́дрит",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id312.mp3"
+  },
+  {
+    "id": 313,
+    "word": "Ободриться",
+    "sensitive": "ободрИться",
+    "incorrect": "обо́дриться",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id313.mp3"
+  },
+  {
+    "id": 314,
+    "word": "Ободрится",
+    "sensitive": "ободрИтся",
+    "incorrect": "обо́дрится",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id314.mp3"
+  },
+  {
+    "id": 315,
+    "word": "Одолжить",
+    "sensitive": "одолжИть",
+    "incorrect": "одо́лжить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id315.mp3"
+  },
+  {
+    "id": 316,
+    "word": "Осведомится",
+    "sensitive": "освЕдомится",
+    "incorrect": "осведоми́тся",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id316.mp3"
+  },
+  {
+    "id": 317,
+    "word": "Откупорить",
+    "sensitive": "откУпорить",
+    "incorrect": "откупо́рить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id317.mp3"
+  },
+  {
+    "id": 318,
+    "word": "Пломбировать",
+    "sensitive": "пломбировАть",
+    "incorrect": "пломби́ровать",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id318.mp3"
+  },
+  {
+    "id": 319,
+    "word": "Понять",
+    "sensitive": "понЯть",
+    "incorrect": "по́нять",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id319.mp3"
+  },
+  {
+    "id": 320,
+    "word": "Прибыть",
+    "sensitive": "прибЫть",
+    "incorrect": "при́быть",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id320.mp3"
+  },
+  {
+    "id": 321,
+    "word": "Прибыли",
+    "sensitive": "прИбыли",
+    "incorrect": "прибы́ли",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id321.mp3"
+  },
+  {
+    "id": 322,
+    "word": "Принять",
+    "sensitive": "принЯть",
+    "incorrect": "при́нять",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id322.mp3"
+  },
+  {
+    "id": 323,
+    "word": "Соврала",
+    "sensitive": "совралА",
+    "incorrect": "совра́ла",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id323.mp3"
+  },
+  {
+    "id": 324,
+    "word": "Запертый",
+    "sensitive": "зАпертый",
+    "incorrect": "запе́ртый",
+    "pronounceable": false,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id324.mp3"
+  },
+  {
+    "id": 325,
+    "word": "Заселенный",
+    "sensitive": "заселЕнный",
+    "incorrect": "засе́ленный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id325.mp3"
+  },
+  {
+    "id": 326,
+    "word": "Низведенный",
+    "sensitive": "низведЕнный",
+    "incorrect": "низве́денный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id326.mp3"
+  },
+  {
+    "id": 327,
+    "word": "Облегченный",
+    "sensitive": "облегчЕнный",
+    "incorrect": "обле́гченный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id327.mp3"
+  },
+  {
+    "id": 328,
+    "word": "Принята",
+    "sensitive": "принятА",
+    "incorrect": "при́нята",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id328.mp3"
+  },
+  {
+    "id": 329,
+    "word": "Углубленный",
+    "sensitive": "углублЕнный",
+    "incorrect": "углу́бленный",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id329.mp3"
+  },
+  {
+    "id": 330,
+    "word": "Вручу",
+    "sensitive": "вручУ",
+    "incorrect": "вру́чу",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id330.mp3"
+  },
+  {
+    "id": 331,
+    "word": "Вручим",
+    "sensitive": "вручИм",
+    "incorrect": "вру́чим",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id331.mp3"
+  },
+  {
+    "id": 332,
+    "word": "Вручишь",
+    "sensitive": "вручИшь",
+    "incorrect": "вру́чишь",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id332.mp3"
+  },
+  {
+    "id": 333,
+    "word": "Вручите",
+    "sensitive": "вручИте",
+    "incorrect": "вру́чите",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id333.mp3"
+  },
+  {
+    "id": 334,
+    "word": "Вручат",
+    "sensitive": "вручАт",
+    "incorrect": "вру́чат",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id334.mp3"
+  },
+  {
+    "id": 335,
+    "word": "Вручить",
+    "sensitive": "вручИть",
+    "incorrect": "вру́чить",
+    "pronounceable": true,
+    "examable": true,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id335.mp3"
+  },
+  {
+    "id": 336,
+    "word": "Ходатайство",
+    "sensitive": "ходАтайство",
+    "incorrect": "ходата́йство",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id336.mp3"
+  },
+  {
+    "id": 337,
+    "word": "Сдала",
+    "sensitive": "сдалА",
+    "incorrect": "сда́ла",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id337.mp3"
+  },
+  {
+    "id": 338,
+    "word": "Отобрала",
+    "sensitive": "отобралА",
+    "incorrect": "отобра́ла",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id338.mp3"
+  },
+  {
+    "id": 339,
+    "word": "Принудил",
+    "sensitive": "принУдил",
+    "incorrect": "принуди́л",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id339.mp3"
+  },
+  {
+    "id": 340,
+    "word": "Предвосхитить",
+    "sensitive": "предвосхИтить",
+    "incorrect": "предвосхити́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id340.mp3"
+  },
+  {
+    "id": 341,
+    "word": "Зубчатый",
+    "sensitive": "зубчАтый",
+    "incorrect": "зу́бчатый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id341.mp3"
+  },
+  {
+    "id": 342,
+    "word": "Духовник",
+    "sensitive": "духовнИк",
+    "incorrect": "духо́вник",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id342.mp3"
+  },
+  {
+    "id": 343,
+    "word": "Толика",
+    "sensitive": "толИка",
+    "incorrect": "то́лика",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id343.mp3"
+  },
+  {
+    "id": 344,
+    "word": "Расклешенная",
+    "sensitive": "расклЕшенная",
+    "incorrect": "расклеше́нная",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id344.mp3"
+  },
+  {
+    "id": 345,
+    "word": "Вогнутый",
+    "sensitive": "вОгнутый",
+    "incorrect": "вогну́тый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id345.mp3"
+  },
+  {
+    "id": 346,
+    "word": "Юрисконсульт",
+    "sensitive": "юрискОнсульт",
+    "incorrect": "юрисконсу́льт",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id346.mp3"
+  },
+  {
+    "id": 347,
+    "word": "Волхвы",
+    "sensitive": "волхвЫ",
+    "incorrect": "во́лхвы",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id347.mp3"
+  },
+  {
+    "id": 348,
+    "word": "Фетиш",
+    "sensitive": "фетИш",
+    "incorrect": "фе́тиш",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id348.mp3"
+  },
+  {
+    "id": 349,
+    "word": "Трансфер",
+    "sensitive": "трансфЕр",
+    "incorrect": "тра́нсфер",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id349.mp3"
+  },
+  {
+    "id": 350,
+    "word": "Искра",
+    "sensitive": "Искра",
+    "incorrect": "искра́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id350.mp3"
+  },
+  {
+    "id": 351,
+    "word": "Щебень",
+    "sensitive": "щЕбень",
+    "incorrect": "щебе́нь",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id351.mp3"
+  },
+  {
+    "id": 352,
+    "word": "Неказистый",
+    "sensitive": "неказИстый",
+    "incorrect": "нека́зистый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id352.mp3"
+  },
+  {
+    "id": 353,
+    "word": "Серебряный",
+    "sensitive": "серЕбряный",
+    "incorrect": "серебря́ный",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id353.mp3"
+  },
+  {
+    "id": 354,
+    "word": "Манящий",
+    "sensitive": "манЯщий",
+    "incorrect": "ма́нящий",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id354.mp3"
+  },
+  {
+    "id": 355,
+    "word": "Факсимиле",
+    "sensitive": "факсИмиле",
+    "incorrect": "факсимиле́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id355.mp3"
+  },
+  {
+    "id": 356,
+    "word": "Ханжество",
+    "sensitive": "хАнжество",
+    "incorrect": "ханжество́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id356.mp3"
+  },
+  {
+    "id": 357,
+    "word": "Хронометр",
+    "sensitive": "хронОметр",
+    "incorrect": "хрономе́тр",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id357.mp3"
+  },
+  {
+    "id": 358,
+    "word": "Вечеря",
+    "sensitive": "вЕчеря",
+    "incorrect": "вечеря́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id358.mp3"
+  },
+  {
+    "id": 359,
+    "word": "Блудница",
+    "sensitive": "блуднИца",
+    "incorrect": "блу́дница",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id359.mp3"
+  },
+  {
+    "id": 360,
+    "word": "Асимметрия",
+    "sensitive": "асимметрИя",
+    "incorrect": "асимме́трия",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id360.mp3"
+  },
+  {
+    "id": 361,
+    "word": "Яслей",
+    "sensitive": "Яслей",
+    "incorrect": "ясле́й",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id361.mp3"
+  },
+  {
+    "id": 362,
+    "word": "Граблей",
+    "sensitive": "грАблей",
+    "incorrect": "грабле́й",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id362.mp3"
+  },
+  {
+    "id": 363,
+    "word": "Гуслей",
+    "sensitive": "гУслей",
+    "incorrect": "гусле́й",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id363.mp3"
+  },
+  {
+    "id": 364,
+    "word": "Удобрить",
+    "sensitive": "удОбрить",
+    "incorrect": "удобри́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id364.mp3"
+  },
+  {
+    "id": 365,
+    "word": "Юродивый",
+    "sensitive": "юрОдивый",
+    "incorrect": "юроди́вый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id365.mp3"
+  },
+  {
+    "id": 366,
+    "word": "Жерло",
+    "sensitive": "жерлО",
+    "incorrect": "же́рло",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id366.mp3"
+  },
+  {
+    "id": 367,
+    "word": "Киоскер",
+    "sensitive": "киоскЕр",
+    "incorrect": "кио́скер",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id367.mp3"
+  },
+  {
+    "id": 368,
+    "word": "Мытарство",
+    "sensitive": "мытАрство",
+    "incorrect": "мытарство́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id368.mp3"
+  },
+  {
+    "id": 369,
+    "word": "Коклюш",
+    "sensitive": "коклЮш",
+    "incorrect": "ко́клюш",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id369.mp3"
+  },
+  {
+    "id": 370,
+    "word": "Чабан",
+    "sensitive": "чабАн",
+    "incorrect": "ча́бан",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id370.mp3"
+  },
+  {
+    "id": 371,
+    "word": "Балую",
+    "sensitive": "балУю",
+    "incorrect": "ба́лую",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id371.mp3"
+  },
+  {
+    "id": 372,
+    "word": "Ломота",
+    "sensitive": "ломОта",
+    "incorrect": "ломота́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id372.mp3"
+  },
+  {
+    "id": 373,
+    "word": "Ивовый",
+    "sensitive": "Ивовый",
+    "incorrect": "иво́вый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id373.mp3"
+  },
+  {
+    "id": 374,
+    "word": "Иконопись",
+    "sensitive": "Иконопись",
+    "incorrect": "ико́нопись",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id374.mp3"
+  },
+  {
+    "id": 375,
+    "word": "Гербовый",
+    "sensitive": "гЕрбовый",
+    "incorrect": "гербо́вый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id375.mp3"
+  },
+  {
+    "id": 376,
+    "word": "Бомбардировать",
+    "sensitive": "бомбардировАть",
+    "incorrect": "бомбарди́ровать",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id376.mp3"
+  },
+  {
+    "id": 377,
+    "word": "Филистер",
+    "sensitive": "филИстер",
+    "incorrect": "фи́листер",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id377.mp3"
+  },
+  {
+    "id": 378,
+    "word": "Благовест",
+    "sensitive": "блАговест",
+    "incorrect": "благове́ст",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id378.mp3"
+  },
+  {
+    "id": 379,
+    "word": "Бочковый",
+    "sensitive": "бОчковый",
+    "incorrect": "бочко́вый",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id379.mp3"
+  },
+  {
+    "id": 380,
+    "word": "Экскурс",
+    "sensitive": "Экскурс",
+    "incorrect": "экску́рс",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id380.mp3"
+  },
+  {
+    "id": 381,
+    "word": "Манты",
+    "sensitive": "мантЫ",
+    "incorrect": "ма́нты",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id381.mp3"
+  },
+  {
+    "id": 382,
+    "word": "Кинематография",
+    "sensitive": "кинематогрАфия",
+    "incorrect": "кинематографи́я",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id382.mp3"
+  },
+  {
+    "id": 383,
+    "word": "Буржуазия",
+    "sensitive": "буржуазИя",
+    "incorrect": "буржуа́зия",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id383.mp3"
+  },
+  {
+    "id": 384,
+    "word": "Гренадер",
+    "sensitive": "гренадЕр",
+    "incorrect": "грена́дер",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id384.mp3"
+  },
+  {
+    "id": 385,
+    "word": "Предав",
+    "sensitive": "предАв",
+    "incorrect": "пре́дав",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id385.mp3"
+  },
+  {
+    "id": 386,
+    "word": "Гастрономия",
+    "sensitive": "гастронОмия",
+    "incorrect": "гастрономи́я",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id386.mp3"
+  },
+  {
+    "id": 387,
+    "word": "Издавна",
+    "sensitive": "Издавна",
+    "incorrect": "издавна́",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id387.mp3"
+  },
+  {
+    "id": 388,
+    "word": "Плесневеть",
+    "sensitive": "плЕсневеть",
+    "incorrect": "плесневе́ть",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id388.mp3"
+  },
+  {
+    "id": 389,
+    "word": "Эпилог",
+    "sensitive": "эпилОг",
+    "incorrect": "эпи́лог",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id389.mp3"
+  },
+  {
+    "id": 390,
+    "word": "Дивишься",
+    "sensitive": "дивИшься",
+    "incorrect": "ди́вишься",
+    "pronounceable": true,
+    "examable": false,
+    "audio_url": "https://dymnyuanofxfaqyhdvxc.supabase.in/storage/v1/object/public/audio/id390.mp3"
+  }
+]
