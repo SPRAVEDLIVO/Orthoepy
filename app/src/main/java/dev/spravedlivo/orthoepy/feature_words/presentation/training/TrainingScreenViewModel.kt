@@ -18,9 +18,7 @@ import kotlinx.coroutines.launch
 import java.io.File
 
 class TrainingScreenViewModel(
-    val wordInfoRepository: WordInfoRepository,
-    val wordsApi: WordsApi,
-    val filesDir: File
+    private val wordInfoRepository: WordInfoRepository
 ) : ViewModel() {
 
     private val _loadingWords = MutableStateFlow<Boolean>(false)
@@ -46,6 +44,8 @@ class TrainingScreenViewModel(
 
     private val _finished = MutableStateFlow(false)
     val finished = _finished.asStateFlow()
+
+    private val _wordIdToAudio = MutableStateFlow(mutableMapOf<Int, File>())
 
 
     fun incrementWordIndex(onDelay: () -> Unit) {
@@ -82,33 +82,26 @@ class TrainingScreenViewModel(
         _loadingAudio.value = true
         disposePlayer()
         val currentWord = _words.value.getOrNull(wordIndex.value) ?: return
+        val audioFile = _wordIdToAudio.value.getOrDefault(currentWord.id, null) ?: return
 
-        viewModelScope.launch {
-            val file = File(filesDir, "${currentWord.id}.mp3")
+        val inputStream = audioFile.inputStream()
 
-            if (!file.exists()) {
-                val arr = wordsApi.getAudioFromUrl(currentWord.audio_url)
-                file.writeBytes(arr)
+
+        MediaPlayer().apply {
+            setAudioAttributes(
+                AudioAttributes.Builder()
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .build()
+            )
+            setOnPreparedListener {
+                inputStream.close()
+                _mediaPlayer.value = it
+                _loadingAudio.value = false
             }
-
-            val inputStream = file.inputStream()
-
-            MediaPlayer().apply {
-                setAudioAttributes(
-                    AudioAttributes.Builder()
-                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                        .setUsage(AudioAttributes.USAGE_MEDIA)
-                        .build()
-                )
-                setOnPreparedListener {
-                    inputStream.close()
-                    _mediaPlayer.value = it
-                    _loadingAudio.value = false
-                }
-                setOnErrorListener { _, _, _ -> inputStream.close(); true }
-                setDataSource(inputStream.fd)
-                prepareAsync() // might take long! (for buffering, etc)
-            }
+            setOnErrorListener { _, _, _ -> inputStream.close(); true }
+            setDataSource(inputStream.fd)
+            prepareAsync() // might take long! (for buffering, etc)
         }
 
     }
@@ -128,13 +121,26 @@ class TrainingScreenViewModel(
             final.add(tmpWords[i])
         }
         _words.value = final
-        _loadedWords.value = true
+        viewModelScope.launch {
+            val it = final[0]
+            val downloaded = wordInfoRepository.downloadWordAudio(it)
+            if (downloaded != null) _wordIdToAudio.value[it.id] = downloaded
+            _loadedWords.value = true
+        }
+
+
+        viewModelScope.launch {
+            final.subList(fromIndex = 1, toIndex = final.size).forEach {
+                val downloaded = wordInfoRepository.downloadWordAudio(it) ?: return@forEach
+                _wordIdToAudio.value[it.id] = downloaded
+            }
+        }
 
     }
 
     companion object {
-        fun factory(filesDir: File) = viewModelFactory {
-            TrainingScreenViewModel(App.appModule.wordInfoRepository, App.appModule.wordsApi, filesDir)
+        val factory = viewModelFactory {
+            TrainingScreenViewModel(App.appModule.wordInfoRepository)
         }
     }
 }

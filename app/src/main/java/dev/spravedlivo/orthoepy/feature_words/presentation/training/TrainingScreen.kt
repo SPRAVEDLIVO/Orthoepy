@@ -42,8 +42,7 @@ val VOWELS = listOfNotNull("а", "и", "е", "ё", "о", "у", "ы", "э", "ю",
 
 @Composable
 fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
-    val viewModel = viewModel<TrainingScreenViewModel>(factory = TrainingScreenViewModel.factory(
-        LocalContext.current.filesDir))
+    val viewModel = viewModel<TrainingScreenViewModel>(factory = TrainingScreenViewModel.factory)
 
     val loadingWords = viewModel.loadingWords.collectAsState()
     val loadedWords = viewModel.loadedWords.collectAsState()
