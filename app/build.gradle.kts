@@ -70,4 +70,6 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.gson)
+    implementation(libs.ktor.core)
+    implementation(libs.ktor.android)
 }

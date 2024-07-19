@@ -4,6 +4,7 @@ import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -11,6 +12,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,7 +20,6 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -27,6 +28,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.delay
@@ -40,7 +42,8 @@ val VOWELS = listOfNotNull("а", "и", "е", "ё", "о", "у", "ы", "э", "ю",
 
 @Composable
 fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
-    val viewModel = viewModel<TrainingScreenViewModel>(factory = TrainingScreenViewModel.factory)
+    val viewModel = viewModel<TrainingScreenViewModel>(factory = TrainingScreenViewModel.factory(
+        LocalContext.current.filesDir))
 
     val loadingWords = viewModel.loadingWords.collectAsState()
     val loadedWords = viewModel.loadedWords.collectAsState()
@@ -48,6 +51,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
     val wordIndex = viewModel.wordIndex.collectAsState()
     val correctHits = viewModel.correctHits.collectAsState()
     val mediaPlayer = viewModel.mediaPlayer.collectAsState()
+    val finished by viewModel.finished.collectAsState()
 
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -59,23 +63,29 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
         } else if (!loadedWords.value) {
 
         } else {
-            if (wordIndex.value < words.value.size) {
-                var ticks by remember {
-                    mutableIntStateOf(0)
+            var ticks by remember {
+                mutableIntStateOf(0)
+            }
+            LaunchedEffect(finished) {
+                while (!finished) {
+                    delay(1000)
+                    ticks++
                 }
-                LaunchedEffect(Unit) {
-                    while (true) {
-                        delay(1000)
-                        ticks++
+            }
+            val minutes = ticks.div(60).toString().padStart(2, '0')
+            val seconds = ticks.mod(60).toString().padStart(2, '0')
+
+            val time by remember(minutes, seconds) {
+                mutableStateOf("$minutes:$seconds")
+            }
+
+            if (!finished) {
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
+                        Text(text = time)
+                        Text(text = "${wordIndex.value} / ${words.value.size}")
                     }
-                }
-                Column {
-                    val minutes = ticks.div(60).toString().padStart(2, '0')
-                    val seconds = ticks.mod(60).toString().padStart(2, '0')
-//                    val time = remember(minutes, seconds) {
-//                        mutableListOf("$minutes:$seconds")
-//                    }
-                    Text(text = "$minutes:$seconds")
+                    LinearProgressIndicator(progress = { wordIndex.value / words.value.size.toFloat() }, modifier = Modifier.fillMaxWidth())
                 }
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
@@ -83,7 +93,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                 ) {
 
                     val wordInfo = words.value[wordIndex.value]
-                    println(wordInfo.word)
+//                    println(wordInfo.word)
                     viewModel.loadAudio()
 
                     val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
@@ -174,6 +184,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                 Column {
                     Text(text = "Training finished!")
                     Text(text = "Got ${correctHits.value} correct out of $amountWords")
+                    Text(text = "Time: $time")
                     Button(onClick = onNavigateSetupScreen::invoke) {
                         Text(text = "Main menu")
                     }

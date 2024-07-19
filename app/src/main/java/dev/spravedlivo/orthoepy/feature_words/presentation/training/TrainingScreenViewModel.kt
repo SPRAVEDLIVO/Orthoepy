@@ -2,19 +2,25 @@ package dev.spravedlivo.orthoepy.feature_words.presentation.training
 
 import android.media.AudioAttributes
 import android.media.MediaPlayer
+import androidx.core.net.toUri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.spravedlivo.orthoepy.App
 import dev.spravedlivo.orthoepy.core.domain.viewModelFactory
+import dev.spravedlivo.orthoepy.feature_words.data.remote.WordsApi
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordInfoItem
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import java.io.File
 
 class TrainingScreenViewModel(
-    val wordInfoRepository: WordInfoRepository
+    val wordInfoRepository: WordInfoRepository,
+    val wordsApi: WordsApi,
+    val filesDir: File
 ) : ViewModel() {
 
     private val _loadingWords = MutableStateFlow<Boolean>(false)
@@ -36,6 +42,10 @@ class TrainingScreenViewModel(
     val mediaPlayer = _mediaPlayer.asStateFlow()
 
     private val _playedSound = MutableStateFlow(false)
+    private val _loadingAudio = MutableStateFlow(false)
+
+    private val _finished = MutableStateFlow(false)
+    val finished = _finished.asStateFlow()
 
 
     fun incrementWordIndex(onDelay: () -> Unit) {
@@ -44,8 +54,9 @@ class TrainingScreenViewModel(
             delay(500)
             onDelay()
             _wordIndex.value += 1
-
             _playedSound.value = false
+            _loadingAudio.value = false
+            _finished.value = _wordIndex.value >= _words.value.size
         }
     }
 
@@ -59,27 +70,47 @@ class TrainingScreenViewModel(
     }
 
     fun disposePlayer() {
-        if (_mediaPlayer.value != null) _mediaPlayer.value!!.release()
+        if (_mediaPlayer.value != null) {
+            _mediaPlayer.value!!.reset()
+            _mediaPlayer.value!!.release()
+        }
         _mediaPlayer.value = null
     }
 
     fun loadAudio() {
-        if (_mediaPlayer.value != null) return
+        if (_mediaPlayer.value != null || _loadingAudio.value) return
+        _loadingAudio.value = true
         disposePlayer()
         val currentWord = _words.value.getOrNull(wordIndex.value) ?: return
-        MediaPlayer().apply {
-            setAudioAttributes(
-                AudioAttributes.Builder()
-                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                    .setUsage(AudioAttributes.USAGE_MEDIA)
-                    .build()
-            )
-            setOnPreparedListener {
-                _mediaPlayer.value = it
+
+        viewModelScope.launch {
+            val file = File(filesDir, "${currentWord.id}.mp3")
+
+            if (!file.exists()) {
+                val arr = wordsApi.getAudioFromUrl(currentWord.audio_url)
+                file.writeBytes(arr)
             }
-            setDataSource(currentWord.audio_url)
-            prepareAsync() // might take long! (for buffering, etc)
+
+            val inputStream = file.inputStream()
+
+            MediaPlayer().apply {
+                setAudioAttributes(
+                    AudioAttributes.Builder()
+                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                        .setUsage(AudioAttributes.USAGE_MEDIA)
+                        .build()
+                )
+                setOnPreparedListener {
+                    inputStream.close()
+                    _mediaPlayer.value = it
+                    _loadingAudio.value = false
+                }
+                setOnErrorListener { _, _, _ -> inputStream.close(); true }
+                setDataSource(inputStream.fd)
+                prepareAsync() // might take long! (for buffering, etc)
+            }
         }
+
     }
 
     fun play() {
@@ -102,8 +133,8 @@ class TrainingScreenViewModel(
     }
 
     companion object {
-        val factory = viewModelFactory {
-            TrainingScreenViewModel(App.appModule.wordInfoRepository)
+        fun factory(filesDir: File) = viewModelFactory {
+            TrainingScreenViewModel(App.appModule.wordInfoRepository, App.appModule.wordsApi, filesDir)
         }
     }
 }
