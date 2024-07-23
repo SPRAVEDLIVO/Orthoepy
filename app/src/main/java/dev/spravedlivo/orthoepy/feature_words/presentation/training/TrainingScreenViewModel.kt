@@ -7,9 +7,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.spravedlivo.orthoepy.App
 import dev.spravedlivo.orthoepy.core.domain.viewModelFactory
+import dev.spravedlivo.orthoepy.feature_words.data.local.WordsDao
 import dev.spravedlivo.orthoepy.feature_words.data.remote.WordsApi
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordInfoItem
+import dev.spravedlivo.orthoepy.feature_words.domain.model.WordRecord
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
+import dev.spravedlivo.orthoepy.feature_words.domain.use_case.GetWordRecords
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,10 +21,12 @@ import kotlinx.coroutines.launch
 import java.io.File
 
 class TrainingScreenViewModel(
-    private val wordInfoRepository: WordInfoRepository
+    private val wordInfoRepository: WordInfoRepository,
+    private val getWordRecords: GetWordRecords,
+    private val wordsDao: WordsDao
 ) : ViewModel() {
 
-    private val _loadingWords = MutableStateFlow<Boolean>(false)
+    private val _loadingWords = MutableStateFlow(false)
     val loadingWords = _loadingWords.asStateFlow()
 
     private val _loadedWords = MutableStateFlow(false)
@@ -47,9 +52,27 @@ class TrainingScreenViewModel(
 
     private val _wordIdToAudio = MutableStateFlow(mutableMapOf<Int, File>())
 
+    private val _incorrectWords = MutableStateFlow(mutableMapOf<WordInfoItem, Int>())
+    val incorrectWords = _incorrectWords.asStateFlow()
 
-    fun incrementWordIndex(onDelay: () -> Unit) {
+    private val _wordRecords = MutableStateFlow(mapOf<Int, WordRecord>())
+
+
+    fun incrementWordIndex(correct: Boolean, pressIndex: Int, onDelay: () -> Unit) {
         viewModelScope.launch {
+            val currentWord = _words.value[_wordIndex.value]
+            if (!correct) {
+                _incorrectWords.value[currentWord] = pressIndex
+            }
+            _wordRecords.value[currentWord.id].let {
+                it ?: return@let
+                it.apply {
+                    when (correct) {
+                        true -> { it.lastIncorrect = false; it.correctHits += 1 }
+                        false -> { it.lastIncorrect = true; it.correctHits = 0 }
+                    }
+                }
+            }
 
             delay(500)
             onDelay()
@@ -57,6 +80,7 @@ class TrainingScreenViewModel(
             _playedSound.value = false
             _loadingAudio.value = false
             _finished.value = _wordIndex.value >= _words.value.size
+
         }
     }
 
@@ -122,6 +146,7 @@ class TrainingScreenViewModel(
         }
         _words.value = final
         viewModelScope.launch {
+            _wordRecords.value = getWordRecords(final)
             val it = final[0]
             val downloaded = wordInfoRepository.downloadWordAudio(it)
             if (downloaded != null) _wordIdToAudio.value[it.id] = downloaded
@@ -140,7 +165,7 @@ class TrainingScreenViewModel(
 
     companion object {
         val factory = viewModelFactory {
-            TrainingScreenViewModel(App.appModule.wordInfoRepository)
+            TrainingScreenViewModel(App.appModule.wordInfoRepository, App.appModule.getWordRecords, App.appModule.wordsDb.dao)
         }
     }
 }

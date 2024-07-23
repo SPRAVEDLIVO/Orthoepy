@@ -5,10 +5,11 @@ import kotlinx.datetime.LocalDateTime
 
 data class WordRecord(
     val id: Int,
-    val correctHits: Int,
+    var correctHits: Int,
+    var lastIncorrect: Boolean,
     val lastSeen: LocalDateTime
 ) {
     fun toWordEntity(): WordEntity {
-        return WordEntity(id, correctHits, lastSeen)
+        return WordEntity(id, correctHits, lastIncorrect, lastSeen)
     }
 }

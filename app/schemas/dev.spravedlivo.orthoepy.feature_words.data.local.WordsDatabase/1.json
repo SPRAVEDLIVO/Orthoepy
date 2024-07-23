@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "3b8bed9c56dbf1c6a5ee338909304c07",
+    "identityHash": "69aa6249b25142c92d8306729c4ce976",
     "entities": [
       {
         "tableName": "WordEntity",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `correctHits` INTEGER NOT NULL, `lastSeen` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `correctHits` INTEGER NOT NULL, `lastIncorrect` INTEGER NOT NULL, `lastSeen` TEXT NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
             "fieldPath": "id",
@@ -17,6 +17,12 @@
           {
             "fieldPath": "correctHits",
             "columnName": "correctHits",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastIncorrect",
+            "columnName": "lastIncorrect",
             "affinity": "INTEGER",
             "notNull": true
           },
@@ -40,7 +46,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3b8bed9c56dbf1c6a5ee338909304c07')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '69aa6249b25142c92d8306729c4ce976')"
     ]
   }
 }

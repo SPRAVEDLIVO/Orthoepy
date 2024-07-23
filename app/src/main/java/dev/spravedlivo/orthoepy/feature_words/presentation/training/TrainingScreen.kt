@@ -7,11 +7,14 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -34,11 +37,20 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.delay
 
 
-enum class ColorState() {
+enum class ColorState {
     DEFAULT, RED, GREEN
 }
 
 val VOWELS = listOfNotNull("а", "и", "е", "ё", "о", "у", "ы", "э", "ю", "я").map { it.uppercase() }
+
+@Composable
+fun resolveColor(colorState: ColorState, defaultColor: Color): Color {
+    return when (colorState) {
+        ColorState.DEFAULT -> defaultColor
+        ColorState.RED -> MaterialTheme.colorScheme.error
+        ColorState.GREEN -> Color.Green
+    }
+}
 
 @Composable
 fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
@@ -51,6 +63,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
     val correctHits = viewModel.correctHits.collectAsState()
     val mediaPlayer = viewModel.mediaPlayer.collectAsState()
     val finished by viewModel.finished.collectAsState()
+    val incorrectWords by viewModel.incorrectWords.collectAsState()
 
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -60,7 +73,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
         if (!loadingWords.value) {
             viewModel.loadWords(amountWords)
         } else if (!loadedWords.value) {
-
+            Text(text = "Initializing...")
         } else {
             var ticks by remember {
                 mutableIntStateOf(0)
@@ -112,11 +125,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                     val animatedColors = mutableListOf<State<Color>>().apply {
                         for (i in 1..wordInfo.word.length) add(
                             animateColorAsState(
-                                targetValue = when (colors[i - 1].value) {
-                                    ColorState.DEFAULT -> defaultColor
-                                    ColorState.RED -> MaterialTheme.colorScheme.error
-                                    ColorState.GREEN -> Color.Green
-                                }, label = "ColorAnimation"
+                                targetValue = resolveColor(colorState = colors[i-1].value, defaultColor), label = "ColorAnimation"
                             )
                         )
                     }
@@ -138,7 +147,8 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                                             if (VOWELS.contains(chr.uppercase())) {
                                                 val correctIndex =
                                                     wordInfo.sensitive.indexOfFirst { it.isUpperCase() }
-                                                if (correctIndex == index) {
+                                                val correct = correctIndex == index
+                                                if (correct) {
                                                     colors[index].value = ColorState.GREEN
                                                     viewModel.incrementCorrectHits()
                                                 } else {
@@ -147,7 +157,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                                                         ColorState.GREEN
                                                 }
 
-                                                viewModel.incrementWordIndex {
+                                                viewModel.incrementWordIndex(correct, index) {
                                                     viewModel.play()
                                                     mediaPlayer.value?.setOnCompletionListener {
                                                         viewModel.disposePlayer()
@@ -180,13 +190,46 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                 }
             } else {
                 Column {}
-                Column {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(text = "Training finished!")
                     Text(text = "Got ${correctHits.value} correct out of $amountWords")
                     Text(text = "Time: $time")
                     Button(onClick = onNavigateSetupScreen::invoke) {
                         Text(text = "Main menu")
                     }
+                    if (incorrectWords.isNotEmpty()) {
+                        Column {
+                            Text(text = "Mistakes:")
+                            HorizontalDivider()
+                            LazyColumn {
+                                incorrectWords.forEach { (key, value) ->
+                                    item(key = key.id) {
+                                        Row {
+                                            val defaultColor = MaterialTheme.colorScheme.onSurface
+                                            val correctIndex = key.sensitive.indexOfFirst { it.isUpperCase() }
+                                            key.word.forEachIndexed { index, char ->
+                                                Text(text = char.toString(), color = when (index == value) {
+                                                    true -> resolveColor(
+                                                        colorState = ColorState.RED,
+                                                        defaultColor = defaultColor
+                                                    )
+                                                    false -> if (index == correctIndex) resolveColor(
+                                                        colorState = ColorState.GREEN,
+                                                        defaultColor = defaultColor
+                                                    ) else defaultColor
+                                                }
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+
                 }
                 Column {}
 

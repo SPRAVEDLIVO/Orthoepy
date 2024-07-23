@@ -8,6 +8,7 @@ import dev.spravedlivo.orthoepy.feature_words.data.remote.WordsApi
 import dev.spravedlivo.orthoepy.feature_words.data.remote.WordsApiImpl
 import dev.spravedlivo.orthoepy.feature_words.data.repository.WordInfoRepositoryImpl
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
+import dev.spravedlivo.orthoepy.feature_words.domain.use_case.GetWordRecords
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.android.Android
 
@@ -17,6 +18,7 @@ interface AppModule {
     val ktor: HttpClient
     val wordsApi: WordsApi
     val wordsDb: WordsDatabase
+    val getWordRecords: GetWordRecords
 }
 
 class AppModuleImpl(val applicationContext: Context) : AppModule {
@@ -32,6 +34,9 @@ class AppModuleImpl(val applicationContext: Context) : AppModule {
         WordInfoRepositoryImpl(applicationContext, gson, wordsApi, wordsDb.dao)
     }
 
+
+
+
     override val ktor: HttpClient by lazy {
         HttpClient(Android) {
 
@@ -43,6 +48,10 @@ class AppModuleImpl(val applicationContext: Context) : AppModule {
             applicationContext,
             WordsDatabase::class.java, "words_database.db"
         ).build()
+    }
+
+    override val getWordRecords: GetWordRecords by lazy {
+        GetWordRecords(wordsDb.dao)
     }
 
 

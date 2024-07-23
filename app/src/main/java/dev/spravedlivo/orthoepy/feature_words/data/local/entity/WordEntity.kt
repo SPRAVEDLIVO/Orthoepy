@@ -8,9 +8,10 @@ import kotlinx.datetime.LocalDateTime
 @Entity
 data class WordEntity(@PrimaryKey val id: Int,
                       val correctHits: Int,
+                      val lastIncorrect: Boolean,
                       val lastSeen: LocalDateTime
 ) {
     fun toWordRecord(): WordRecord {
-        return WordRecord(id, correctHits, lastSeen)
+        return WordRecord(id, correctHits, lastIncorrect, lastSeen)
     }
 }
