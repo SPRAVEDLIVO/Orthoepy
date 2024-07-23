@@ -72,6 +72,7 @@ class TrainingScreenViewModel(
                         false -> { it.lastIncorrect = true; it.correctHits = 0 }
                     }
                 }
+                wordsDao.upsertWordEntity(it.toWordEntity())
             }
 
             delay(500)

@@ -199,8 +199,8 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                     }
                     if (incorrectWords.isNotEmpty()) {
                         Column {
-                            Text(text = "Mistakes:")
                             HorizontalDivider()
+                            Text(text = "Mistakes:")
                             LazyColumn {
                                 incorrectWords.forEach { (key, value) ->
                                     item(key = key.id) {
