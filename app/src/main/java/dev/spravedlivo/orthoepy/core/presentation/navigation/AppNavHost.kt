@@ -8,9 +8,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.SetupScreen
-import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreen
+import dev.spravedlivo.orthoepy.core.presentation.main.MainScreen
+import dev.spravedlivo.orthoepy.feature_words.presentation.dictionary.DictionaryScreen
+import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.DictionaryScreenDestination
+import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.SetupScreenDestination
+import dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreenDestination
 import dev.spravedlivo.orthoepy.feature_words.presentation.setup.SetupScreen
+import dev.spravedlivo.orthoepy.feature_words.presentation.training.TrainingScreen
 import kotlin.reflect.KClass
 
 fun NavHostController.navigateSingleTopTo(
@@ -32,23 +36,42 @@ fun NavHostController.navigateSingleTopTo(
 @Composable
 fun AppNavHost(context: Context) {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = SetupScreen) {
-        composable<SetupScreen> {
+    NavHost(navController = navController, startDestination = MainScreenDestination) {
+        composable<MainScreenDestination> {
+            MainScreen(
+                onNavigateDictionaryScreen = {
+                    navController.navigate(DictionaryScreenDestination)
+                },
+                onNavigateSetupScreen = {
+                    navController.navigate(SetupScreenDestination)
+                }
+            )
+        }
+        composable<SetupScreenDestination> {
             SetupScreen(context, onNavigateMainScreen = { amountWords ->
                 navController.navigate(
-                    dev.spravedlivo.orthoepy.feature_words.presentation.navigation.TrainingScreen(
+                    TrainingScreenDestination(
                         amountWords
                     )
                 )
             })
         }
-        composable<TrainingScreen> {
-            val args = it.toRoute<TrainingScreen>()
-            dev.spravedlivo.orthoepy.feature_words.presentation.training.TrainingScreen(
+        composable<TrainingScreenDestination> {
+            val args = it.toRoute<TrainingScreenDestination>()
+            TrainingScreen(
                 amountWords = args.amountWords,
                 onNavigateSetupScreen = {
-                    navController.navigate(SetupScreen)
+                    navController.navigate(SetupScreenDestination)
+                },
+                onNavigateMainScreen = {
+                    navController.navigate(MainScreenDestination)
                 })
+        }
+
+        composable<DictionaryScreenDestination> {
+            DictionaryScreen {
+                navController.navigate(MainScreenDestination)
+            }
         }
     }
 }

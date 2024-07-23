@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilledTonalButton
@@ -31,7 +30,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.delay
@@ -53,7 +51,11 @@ fun resolveColor(colorState: ColorState, defaultColor: Color): Color {
 }
 
 @Composable
-fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
+fun TrainingScreen(
+    amountWords: Int,
+    onNavigateMainScreen: () -> Unit,
+    onNavigateSetupScreen: () -> Unit
+) {
     val viewModel = viewModel<TrainingScreenViewModel>(factory = TrainingScreenViewModel.factory)
 
     val loadingWords = viewModel.loadingWords.collectAsState()
@@ -64,6 +66,7 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
     val mediaPlayer = viewModel.mediaPlayer.collectAsState()
     val finished by viewModel.finished.collectAsState()
     val incorrectWords by viewModel.incorrectWords.collectAsState()
+    val wordRecords by viewModel.wordRecords.collectAsState()
 
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -92,23 +95,41 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
             }
 
             if (!finished) {
-                Column(modifier = Modifier.fillMaxWidth()) {
+                val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
+                val wordInfo = words.value[wordIndex.value]
+                val wordRecord = wordRecords[wordInfo.id]!!
+                Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
                     Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
                         Text(text = time)
                         Text(text = "${wordIndex.value} / ${words.value.size}")
                     }
                     LinearProgressIndicator(progress = { wordIndex.value / words.value.size.toFloat() }, modifier = Modifier.fillMaxWidth())
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        if (wordRecord.lastIncorrect) {
+                            Text(text = "This is a difficult word for you", color = resolveColor(
+                                colorState = ColorState.RED,
+                                defaultColor = defaultColor
+                            ))
+                        }
+                        else if (wordRecord.correctHits >= 5) {
+                            Text(text = "This is a learned word", color = resolveColor(
+                                colorState = ColorState.GREEN,
+                                defaultColor = defaultColor
+                            ))
+                        }
+                        if (wordInfo.examable) {
+                            FilledTonalButton(onClick = {}) {
+                                Text(text = "FIPI")
+                            }
+                        }
+                    }
                 }
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.fillMaxWidth()
                 ) {
 
-                    val wordInfo = words.value[wordIndex.value]
-//                    println(wordInfo.word)
                     viewModel.loadAudio()
-
-                    val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
 
 
                     val colors = mutableListOf<MutableState<ColorState>>()
@@ -194,7 +215,10 @@ fun TrainingScreen(amountWords: Int, onNavigateSetupScreen: () -> Unit) {
                     Text(text = "Training finished!")
                     Text(text = "Got ${correctHits.value} correct out of $amountWords")
                     Text(text = "Time: $time")
-                    Button(onClick = onNavigateSetupScreen::invoke) {
+                    FilledTonalButton(onClick = onNavigateSetupScreen::invoke) {
+                        Text(text = "Another training")
+                    }
+                    Button(onClick = onNavigateMainScreen::invoke) {
                         Text(text = "Main menu")
                     }
                     if (incorrectWords.isNotEmpty()) {

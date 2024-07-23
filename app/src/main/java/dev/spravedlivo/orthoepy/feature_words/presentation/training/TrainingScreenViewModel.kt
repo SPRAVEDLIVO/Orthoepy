@@ -56,6 +56,7 @@ class TrainingScreenViewModel(
     val incorrectWords = _incorrectWords.asStateFlow()
 
     private val _wordRecords = MutableStateFlow(mapOf<Int, WordRecord>())
+    val wordRecords = _wordRecords.asStateFlow()
 
 
     fun incrementWordIndex(correct: Boolean, pressIndex: Int, onDelay: () -> Unit) {
@@ -64,6 +65,15 @@ class TrainingScreenViewModel(
             if (!correct) {
                 _incorrectWords.value[currentWord] = pressIndex
             }
+
+
+            delay(500)
+            onDelay()
+            _wordIndex.value += 1
+            _playedSound.value = false
+            _loadingAudio.value = false
+            _finished.value = _wordIndex.value >= _words.value.size
+
             _wordRecords.value[currentWord.id].let {
                 it ?: return@let
                 it.apply {
@@ -74,14 +84,6 @@ class TrainingScreenViewModel(
                 }
                 wordsDao.upsertWordEntity(it.toWordEntity())
             }
-
-            delay(500)
-            onDelay()
-            _wordIndex.value += 1
-            _playedSound.value = false
-            _loadingAudio.value = false
-            _finished.value = _wordIndex.value >= _words.value.size
-
         }
     }
 

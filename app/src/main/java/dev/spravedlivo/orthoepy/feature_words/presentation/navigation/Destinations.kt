@@ -3,7 +3,10 @@ package dev.spravedlivo.orthoepy.feature_words.presentation.navigation
 import kotlinx.serialization.Serializable
 
 @Serializable
-object SetupScreen
+object SetupScreenDestination
 
 @Serializable
-data class TrainingScreen(val amountWords: Int)
+data class TrainingScreenDestination(val amountWords: Int)
+
+@Serializable
+object DictionaryScreenDestination
