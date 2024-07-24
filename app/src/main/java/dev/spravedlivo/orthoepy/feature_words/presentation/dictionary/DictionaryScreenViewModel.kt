@@ -2,6 +2,7 @@ package dev.spravedlivo.orthoepy.feature_words.presentation.dictionary
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.room.Query
 import dev.spravedlivo.orthoepy.App
 import dev.spravedlivo.orthoepy.core.domain.viewModelFactory
 import dev.spravedlivo.orthoepy.feature_words.data.local.WordsDao
@@ -15,6 +16,24 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
+
+class WordFilterPredicate(
+    private val wordRecords: Map<Int, WordRecord>,
+    private val query: String
+) {
+    private fun visited(record: WordRecord): Boolean {
+        return record.lastIncorrect || record.correctHits != 0
+    }
+    fun filterBlankQuery(it: WordInfoItem): Boolean {
+        val record = wordRecords.getOrDefault(it.id, null) ?: return false
+        return visited(record)
+    }
+
+    fun filterNotBlank(it: WordInfoItem): Boolean {
+        val record = wordRecords.getOrDefault(it.id, null) ?: return false
+        return visited(record) && it.word.lowercase().startsWith(query)
+    }
+}
 
 class DictionaryScreenViewModel(
     private val wordsDao: WordsDao,
@@ -51,17 +70,14 @@ class DictionaryScreenViewModel(
         }
     }
 
+
     @OptIn(ExperimentalCoroutinesApi::class)
     suspend fun searchWords(query: String) = suspendCancellableCoroutine { continuation ->
         val queryTransformed = query.lowercase()
+        val instance = WordFilterPredicate(_wordRecords.value, queryTransformed)
         val predicate = when (query.isBlank()) {
-            true -> {
-                it: WordInfoItem -> _wordRecords.value.containsKey(it.id) }
-            false -> { it: WordInfoItem ->
-                it.word.lowercase().startsWith(queryTransformed) && _wordRecords.value.containsKey(
-                    it.id
-                )
-            }
+            true -> instance::filterBlankQuery
+            false -> instance::filterNotBlank
         }
         _allWords.value.filter(predicate).groupBy {
             _wordRecords.value[it.id]!!.lastIncorrect

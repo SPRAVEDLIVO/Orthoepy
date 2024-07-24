@@ -20,14 +20,12 @@ import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordRecord
 import kotlinx.datetime.LocalDateTime
 import kotlinx.datetime.format
-import kotlinx.datetime.format.DateTimeComponents
 import kotlinx.datetime.format.MonthNames
 import kotlinx.datetime.format.char
 
@@ -98,7 +96,7 @@ fun DictionaryScreen(onNavigateMainScreen: () -> Unit) {
                             it.word.forEachIndexed { index, c ->
                                 Text(text = c.toString(), color = if (index == correctIndex) Color.Green else Color.Unspecified)
                             }
-                            Text(text = wordRecord.lastSeen.format(format),
+                            Text(text = "${wordRecord.lastSeen.format(format)} ${if (wordRecord.lastIncorrect) ", incorrect" else ", correct"}",
                                 modifier = Modifier.padding(horizontal = 10.dp),
                                 color = MaterialTheme.colorScheme.secondary
                             )
