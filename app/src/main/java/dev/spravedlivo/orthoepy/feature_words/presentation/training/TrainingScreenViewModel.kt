@@ -2,20 +2,17 @@ package dev.spravedlivo.orthoepy.feature_words.presentation.training
 
 import android.media.AudioAttributes
 import android.media.MediaPlayer
-import androidx.core.net.toUri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.spravedlivo.orthoepy.App
 import dev.spravedlivo.orthoepy.core.domain.viewModelFactory
 import dev.spravedlivo.orthoepy.feature_words.data.local.WordsDao
-import dev.spravedlivo.orthoepy.feature_words.data.remote.WordsApi
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordInfoItem
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordRecord
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
 import dev.spravedlivo.orthoepy.feature_words.domain.use_case.GetWordRecords
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import java.io.File
@@ -78,8 +75,13 @@ class TrainingScreenViewModel(
                 it ?: return@let
                 it.apply {
                     when (correct) {
-                        true -> { it.lastIncorrect = false; it.correctHits += 1 }
-                        false -> { it.lastIncorrect = true; it.correctHits = 0 }
+                        true -> {
+                            it.lastIncorrect = false; it.correctHits += 1
+                        }
+
+                        false -> {
+                            it.lastIncorrect = true; it.correctHits = 0
+                        }
                     }
                 }
                 wordsDao.upsertWordEntity(it.toWordEntity())
@@ -168,7 +170,11 @@ class TrainingScreenViewModel(
 
     companion object {
         val factory = viewModelFactory {
-            TrainingScreenViewModel(App.appModule.wordInfoRepository, App.appModule.getWordRecords, App.appModule.wordsDb.dao)
+            TrainingScreenViewModel(
+                App.appModule.wordInfoRepository,
+                App.appModule.getWordRecords,
+                App.appModule.wordsDb.dao
+            )
         }
     }
 }

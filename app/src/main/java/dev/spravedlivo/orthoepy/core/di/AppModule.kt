@@ -35,8 +35,6 @@ class AppModuleImpl(val applicationContext: Context) : AppModule {
     }
 
 
-
-
     override val ktor: HttpClient by lazy {
         HttpClient(Android) {
 

@@ -12,11 +12,18 @@ import androidx.compose.ui.unit.dp
 import dev.spravedlivo.orthoepy.R
 
 @Composable
-fun MainScreen(onNavigateSetupScreen: () -> Unit,
-               onNavigateDictionaryScreen: () -> Unit
+fun MainScreen(
+    onNavigateSetupScreen: () -> Unit,
+    onNavigateDictionaryScreen: () -> Unit
 ) {
-    Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Column(
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
             Text(
                 text = stringResource(id = R.string.app_name),
                 fontWeight = MaterialTheme.typography.titleLarge.fontWeight,

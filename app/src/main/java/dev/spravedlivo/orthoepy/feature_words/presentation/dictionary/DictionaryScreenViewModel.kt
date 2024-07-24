@@ -15,12 +15,11 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
-import kotlin.coroutines.Continuation
 
 class DictionaryScreenViewModel(
     private val wordsDao: WordsDao,
     private val wordInfoRepository: WordInfoRepository
-): ViewModel() {
+) : ViewModel() {
 
     private val _searchQuery = MutableStateFlow("")
     val searchQuery = _searchQuery.asStateFlow()
@@ -35,7 +34,7 @@ class DictionaryScreenViewModel(
     private val _filteredWords = MutableStateFlow(listOf<WordInfoItem>())
     val filteredWords = _filteredWords.asStateFlow()
     private val _wordRecords = MutableStateFlow(mapOf<Int, WordRecord>())
-
+    val wordRecords = _wordRecords.asStateFlow()
 
     private var searchJob: Job? = null
 
@@ -43,9 +42,10 @@ class DictionaryScreenViewModel(
         viewModelScope.launch {
             suspend {
                 _loading.value = true
-                _filteredWords.value = wordInfoRepository.getWordInfo().toList()
                 _allWords.value = wordInfoRepository.getWordInfo().toList()
-                _wordRecords.value = wordsDao.getAllWordEntities().associate { it.id to it.toWordRecord() }
+                _wordRecords.value =
+                    wordsDao.getAllWordEntities().associate { it.id to it.toWordRecord() }
+                _filteredWords.value = searchWords("")
                 _loaded.value = true
             }()
         }
@@ -54,12 +54,28 @@ class DictionaryScreenViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     suspend fun searchWords(query: String) = suspendCancellableCoroutine { continuation ->
         val queryTransformed = query.lowercase()
-        val it2 = _allWords.value.filter {
-            it.word.lowercase().startsWith(queryTransformed) && _wordRecords.value.containsKey(it.id)
-        }.sortedBy {
-            _wordRecords.value[it.id]!!.lastIncorrect
+        val predicate = when (query.isBlank()) {
+            true -> {
+                it: WordInfoItem -> _wordRecords.value.containsKey(it.id) }
+            false -> { it: WordInfoItem ->
+                it.word.lowercase().startsWith(queryTransformed) && _wordRecords.value.containsKey(
+                    it.id
+                )
+            }
         }
-        continuation.resume(it2) {}
+        _allWords.value.filter(predicate).groupBy {
+            _wordRecords.value[it.id]!!.lastIncorrect
+        }.apply {
+            val final = mutableListOf<WordInfoItem>()
+            final.addAll((this[true] ?: listOf()).sortedByDescending {
+                _wordRecords.value[it.id]!!.lastSeen
+            })
+            final.addAll((this[false] ?: listOf()).sortedByDescending {
+                _wordRecords.value[it.id]!!.lastSeen
+            })
+            continuation.resume(final) {}
+        }
+
     }
 
 
@@ -68,9 +84,7 @@ class DictionaryScreenViewModel(
         searchJob?.cancel()
         searchJob = viewModelScope.launch {
             delay(500L)
-            _filteredWords.value = if (_searchQuery.value.isBlank())
-                _allWords.value else
-                    searchWords(_searchQuery.value)
+            _filteredWords.value = searchWords(_searchQuery.value)
         }
     }
 

@@ -10,7 +10,7 @@ interface WordsApi {
 
 class WordsApiImpl(
     private val client: HttpClient
-): WordsApi {
+) : WordsApi {
     override suspend fun getAudioFromUrl(url: String): ByteArray {
         return client.get(url).body()
     }

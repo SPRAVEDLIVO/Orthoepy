@@ -1,14 +1,20 @@
 package dev.spravedlivo.orthoepy.feature_words.presentation.training
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -31,6 +37,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.delay
 
@@ -95,27 +102,39 @@ fun TrainingScreen(
             }
 
             if (!finished) {
-                val defaultColor = ButtonDefaults.filledTonalButtonColors().contentColor
+                val defaultColor = ButtonDefaults.filledTonalButtonColors().containerColor
                 val wordInfo = words.value[wordIndex.value]
                 val wordRecord = wordRecords[wordInfo.id]!!
-                Column(modifier = Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
+                Column(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Row(
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
                         Text(text = time)
                         Text(text = "${wordIndex.value} / ${words.value.size}")
                     }
-                    LinearProgressIndicator(progress = { wordIndex.value / words.value.size.toFloat() }, modifier = Modifier.fillMaxWidth())
+                    LinearProgressIndicator(
+                        progress = { wordIndex.value / words.value.size.toFloat() },
+                        modifier = Modifier.fillMaxWidth()
+                    )
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         if (wordRecord.lastIncorrect) {
-                            Text(text = "This is a difficult word for you", color = resolveColor(
-                                colorState = ColorState.RED,
-                                defaultColor = defaultColor
-                            ))
-                        }
-                        else if (wordRecord.correctHits >= 5) {
-                            Text(text = "This is a learned word", color = resolveColor(
-                                colorState = ColorState.GREEN,
-                                defaultColor = defaultColor
-                            ))
+                            Text(
+                                text = "This is a difficult word for you", color = resolveColor(
+                                    colorState = ColorState.RED,
+                                    defaultColor = defaultColor
+                                )
+                            )
+                        } else if (wordRecord.correctHits >= 5) {
+                            Text(
+                                text = "This is a learned word", color = resolveColor(
+                                    colorState = ColorState.GREEN,
+                                    defaultColor = defaultColor
+                                )
+                            )
                         }
                         if (wordInfo.examable) {
                             FilledTonalButton(onClick = {}) {
@@ -146,7 +165,10 @@ fun TrainingScreen(
                     val animatedColors = mutableListOf<State<Color>>().apply {
                         for (i in 1..wordInfo.word.length) add(
                             animateColorAsState(
-                                targetValue = resolveColor(colorState = colors[i-1].value, defaultColor), label = "ColorAnimation"
+                                targetValue = resolveColor(
+                                    colorState = colors[i - 1].value,
+                                    defaultColor
+                                ), label = "ColorAnimation"
                             )
                         )
                     }
@@ -193,7 +215,7 @@ fun TrainingScreen(
                                         },
                                         modifier = Modifier.size(50.dp),
                                         contentPadding = PaddingValues(0.dp),
-                                        colors = ButtonDefaults.buttonColors().copy(
+                                        colors = ButtonDefaults.filledTonalButtonColors().copy(
                                             containerColor = animatedColors.getOrNull(index)?.value
                                                 ?: defaultColor
                                         )
@@ -230,18 +252,22 @@ fun TrainingScreen(
                                     item(key = key.id) {
                                         Row {
                                             val defaultColor = MaterialTheme.colorScheme.onSurface
-                                            val correctIndex = key.sensitive.indexOfFirst { it.isUpperCase() }
+                                            val correctIndex =
+                                                key.sensitive.indexOfFirst { it.isUpperCase() }
                                             key.word.forEachIndexed { index, char ->
-                                                Text(text = char.toString(), color = when (index == value) {
-                                                    true -> resolveColor(
-                                                        colorState = ColorState.RED,
-                                                        defaultColor = defaultColor
-                                                    )
-                                                    false -> if (index == correctIndex) resolveColor(
-                                                        colorState = ColorState.GREEN,
-                                                        defaultColor = defaultColor
-                                                    ) else defaultColor
-                                                }
+                                                Text(
+                                                    text = char.toString(),
+                                                    color = when (index == value) {
+                                                        true -> resolveColor(
+                                                            colorState = ColorState.RED,
+                                                            defaultColor = defaultColor
+                                                        )
+
+                                                        false -> if (index == correctIndex) resolveColor(
+                                                            colorState = ColorState.GREEN,
+                                                            defaultColor = defaultColor
+                                                        ) else defaultColor
+                                                    }
                                                 )
                                             }
                                         }

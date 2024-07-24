@@ -12,6 +12,7 @@ interface WordsDao {
 
     @Query("SELECT * FROM wordentity WHERE id IN(:ids)")
     suspend fun getWordEntities(ids: List<Int>): List<WordEntity>
+
     @Query("SELECT * FROM wordentity")
     suspend fun getAllWordEntities(): List<WordEntity>
 }
