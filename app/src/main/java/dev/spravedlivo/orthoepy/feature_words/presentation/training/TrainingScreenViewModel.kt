@@ -11,6 +11,7 @@ import dev.spravedlivo.orthoepy.feature_words.domain.model.WordInfoItem
 import dev.spravedlivo.orthoepy.feature_words.domain.model.WordRecord
 import dev.spravedlivo.orthoepy.feature_words.domain.repository.WordInfoRepository
 import dev.spravedlivo.orthoepy.feature_words.domain.use_case.GetWordRecords
+import dev.spravedlivo.orthoepy.feature_words.domain.use_case.getNow
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -83,6 +84,7 @@ class TrainingScreenViewModel(
                             it.lastIncorrect = true; it.correctHits = 0
                         }
                     }
+                    it.lastSeen = getNow()
                 }
                 wordsDao.upsertWordEntity(it.toWordEntity())
             }

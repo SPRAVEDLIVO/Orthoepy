@@ -7,8 +7,12 @@ import dev.spravedlivo.orthoepy.feature_words.domain.model.WordRecord
 import kotlinx.datetime.toKotlinLocalDateTime
 import java.time.LocalDateTime
 
-fun defaultWordEntity(id: Int): WordEntity {
-    return WordEntity(id, 0, false, LocalDateTime.now().toKotlinLocalDateTime())
+fun getNow(): kotlinx.datetime.LocalDateTime {
+    return LocalDateTime.now().toKotlinLocalDateTime()
+}
+
+fun defaultWordEntity(id: Int, now: kotlinx.datetime.LocalDateTime? = null): WordEntity {
+    return WordEntity(id, 0, false, now ?: getNow())
 }
 
 class GetWordRecords(
@@ -16,9 +20,9 @@ class GetWordRecords(
 ) {
     suspend operator fun invoke(words: List<WordInfoItem>): Map<Int, WordRecord> {
         val records = wordsDao.getWordEntities(words.map { it.id })
-
+        val now = getNow()
         val transform = words.map {
-            records.find { out -> it.id == out.id } ?: defaultWordEntity(it.id)
+            records.find { out -> it.id == out.id } ?: defaultWordEntity(it.id, now)
         }
 
         transform.forEach {

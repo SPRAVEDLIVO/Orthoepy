@@ -2,7 +2,6 @@ package dev.spravedlivo.orthoepy.feature_words.presentation.dictionary
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.room.Query
 import dev.spravedlivo.orthoepy.App
 import dev.spravedlivo.orthoepy.core.domain.viewModelFactory
 import dev.spravedlivo.orthoepy.feature_words.data.local.WordsDao
@@ -24,6 +23,7 @@ class WordFilterPredicate(
     private fun visited(record: WordRecord): Boolean {
         return record.lastIncorrect || record.correctHits != 0
     }
+
     fun filterBlankQuery(it: WordInfoItem): Boolean {
         val record = wordRecords.getOrDefault(it.id, null) ?: return false
         return visited(record)

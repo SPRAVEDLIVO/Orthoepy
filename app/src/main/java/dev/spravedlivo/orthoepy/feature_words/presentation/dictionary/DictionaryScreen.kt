@@ -31,7 +31,12 @@ import kotlinx.datetime.format.char
 
 fun resolveWordColor(wordRecord: WordRecord): Color {
     return if (wordRecord.lastIncorrect) Color.Red
-    else Color((255 - 2.55F * wordRecord.correctHits * 20) / 255F, 2.55F * wordRecord.correctHits * 20, 0F,255F)
+    else Color(
+        (255 - 2.55F * wordRecord.correctHits * 20) / 255F,
+        2.55F * wordRecord.correctHits * 20,
+        0F,
+        255F
+    )
 }
 
 val format = LocalDateTime.Format {
@@ -82,7 +87,10 @@ fun DictionaryScreen(onNavigateMainScreen: () -> Unit) {
                             modifier = Modifier
                                 .drawWithContent {
 
-                                    translate((textSize.dp * dpToPx / 2).value, (textSize.dp * dpToPx * 9 / 10).value) {
+                                    translate(
+                                        (textSize.dp * dpToPx / 2).value,
+                                        (textSize.dp * dpToPx * 9 / 10).value
+                                    ) {
                                         drawCircle(
                                             resolveWordColor(wordRecord),
                                             15f
@@ -94,9 +102,13 @@ fun DictionaryScreen(onNavigateMainScreen: () -> Unit) {
                             val correctIndex =
                                 it.sensitive.indexOfFirst { it.isUpperCase() }
                             it.word.forEachIndexed { index, c ->
-                                Text(text = c.toString(), color = if (index == correctIndex) Color.Green else Color.Unspecified)
+                                Text(
+                                    text = c.toString(),
+                                    color = if (index == correctIndex) Color.Green else Color.Unspecified
+                                )
                             }
-                            Text(text = "${wordRecord.lastSeen.format(format)} ${if (wordRecord.lastIncorrect) ", incorrect" else ", correct"}",
+                            Text(
+                                text = "${wordRecord.lastSeen.format(format)} ${if (wordRecord.lastIncorrect) ", incorrect" else ", correct"}",
                                 modifier = Modifier.padding(horizontal = 10.dp),
                                 color = MaterialTheme.colorScheme.secondary
                             )

@@ -7,7 +7,7 @@ data class WordRecord(
     val id: Int,
     var correctHits: Int,
     var lastIncorrect: Boolean,
-    val lastSeen: LocalDateTime
+    var lastSeen: LocalDateTime
 ) {
     fun toWordEntity(): WordEntity {
         return WordEntity(id, correctHits, lastIncorrect, lastSeen)
